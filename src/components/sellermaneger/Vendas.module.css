@@ -1,0 +1,10 @@
+.formContact .input_box, textarea, select{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 4px 4px;
+}
