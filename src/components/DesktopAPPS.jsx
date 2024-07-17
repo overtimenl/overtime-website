@@ -14,64 +14,47 @@ const sli = [
 		id: 1,
 		work: 'APP Desktop',
 		name: 'GESTÃO DE RESTAURANTE',
-		img: 'restaurantApp.png',
-		conteudo: 'Incrivelmente satisfeito com a aplicação que a Overtime desenvolveu para nós! Facilitou muito nossas operações diárias. Obrigado pela inovação',
+		image: 'd85c5d75-941a-46e7-8847-f75f1476e4bd.jpg',
+		conteudo: 'Essa aplicação, permite a gestão de pequenos e médios, restaurantes, bar e lanchonetes.  Com dois paineis de controle de gestão o de balconista e painel de administrador ',
 		more: 'saber mais',
-		whats: ''
+		whats: 'https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0'
 
 	},
 	{
 		id: 2,
 		work: 'APP Desktop',
 		name: 'GESTÃO DE LOJAS',
-		img: 'storeApp.png',
-		conteudo: 'A produção multimídia da Overtime deu vida à nossa marca de uma maneira que nunca imaginamos. Estamos impressionados e agradecidos por sua visão criativa!',
+		image: '697f450c-e2a6-4701-920c-6051a9a604c6.jpg',
+		conteudo: 'Essa aplicação é para gestão de Lojas, para pequenas e médias, tem os paineis de vendedor e de administrador, permitindo cadastrar dividas, gerar fatura, registro de folhas de salários, controle de fluxo de caixa e mais..  ',
 		more: 'saber mais',
-		whats: ''
+		whats: 'https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0'
 	},
 	{
 		id: 3,
 		work: 'APP Desktop',
-		name: 'GESTÃO DE RESTAURANTE',
-		img: 'restaurantApp.png',
-		conteudo: 'O marketing estratégico da Overtime trouxe resultados tangíveis para nossos negócios. Agradecemos pela abordagem proativa e pelos insights valiosos.',
+		name: 'GESTÃO DE FARMÁCIA',
+		image: 'e158c452-493a-4ce3-ba4d-2e456550a3b8.jpg',
+		conteudo: 'Essa aplicação é para gestão de Farmácia, para pequenas e médias, tem os paineis de vendedor e de administrador, permitindo  gerar fatura, registro de folhas de salários, controle de fluxo de caixa e mais..',
 		more: 'saber mais',
-		whats: '' 
+		whats: 'https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0' 
 	},
 	{
 		id: 4,
 		work: 'APP Desktop',
-		name: 'GESTÃO DE RESTAURANTE',
-		img: 'restaurantApp.png',
-		conteudo: 'Agradecemos à Overtime por traduzir nossas ideias em uma experiência web excepcional. A navegação intuitiva e o design atraente são elogiados por nossos clientes',
+		name: 'GESTÃO DE COLÉGIOS',
+		image: '0800d432-7bb7-4fbf-a2db-cdbb38e34c6a.jpg',
+		conteudo: 'Essa aplicação é para gestão de Escolas, para pequenas e médias, contem dois paineis um para secretaria e outro para Diretoria, permitindo o Cadastro de alunos, turmas, históricos, Funcionários, controle Financeiro e mais   ...',
 		more: 'saber mais',
-		whats: ''
+		whats: 'https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0'
 	},
-	{
-		id: 5,
-		work: 'APP Desktop',
-		name: 'GESTÃO DE LOJAS',
-		img: 'storeApp.png',
-		conteudo: 'A aplicação desktop da Overtime simplificou nossos processos internos de maneira eficiente. Muito obrigado pela eficácia e profissionalismo.',
-		more: 'saber mais',
-		whats: ''
-	},
-	{
-		id: 6,
-		work: 'APP Desktop',
-		name: 'GESTÃO DE LOJAS',
-		img: 'storeApp.png',
-		conteudo: 'A equipe da Overtime não só entregou um site incrível, mas também foi excepcionalmente colaborativa durante todo o processo. Obrigado pela parceria',
-		more: 'saber mais',
-		whats: ''
-	},
+	
 ];
 
 
 function DesktopAPPS(props) {
 
 	const { primery, secudary } = props;
-	const [slides, setSlides] = useState([]);
+	const [slides, setSlides] = useState(sli);
 
 	const settings = {
 	  dots: true,
@@ -107,17 +90,17 @@ function DesktopAPPS(props) {
 	    }
 	  ]
 	}
+	/*
+		useEffect(() => {
+	    	//setCurrentSlide(0);
+	    	fetch("http://localhost:8000/worksdb/")
+	        .then((response)=>response.json())
+	        .then((responseJson)=>{
+	           setSlides(responseJson)
+	        })  
 
-	useEffect(() => {
-    	//setCurrentSlide(0);
-    	fetch("http://localhost:8000/worksdb/")
-        .then((response)=>response.json())
-        .then((responseJson)=>{
-           setSlides(responseJson)
-        })  
-
-  	}, []);
-
+	  	}, []);
+	*/
 	return(
 		<Box
 		>
@@ -222,7 +205,10 @@ function DesktopAPPS(props) {
 							        >
 							        	Saber Mais..
 							        </Button>
-							        <IconButton>
+							        <IconButton
+							        		href={slide.whats}
+											target="_blank"
+							        >
 									  <WhatsApp 
 									  	sx={{
 									  		color: 'green',

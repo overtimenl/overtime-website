@@ -3,44 +3,62 @@ import { makeStyles } from "@mui/styles";
 import { Button, Typography} from "@mui/material";
 import classes from "./Publicidades.module.css";
 
-/*const slides = [
+const slids = [
 	{
 		id: 1,
-		title: 'APlicação Desktop',
+		title: 'APLICAÇÃO DESKTOP',
 		subtitle: 'Gestão Financeira e RH',
-		descricao: 'Controle de fluxo de caixa, folhas de salários, cadastros de Funcionários ...',
-		image: 'Fundo_GestApp01.png',
-		more: 'saber mais'
+		descricao: 'Controle de fluxo de caixa, folhas de salários, cadastros de Funcionários e mais ...',
+		image: '08a8db60-0f7b-4afc-a7ab-e7febb47d589.jpg',
+		more: '#'
 	},
 	{
 		id: 2,
-		title: 'APlicação Desktop',
+		title: 'APLICAÇÃO DESKTOP',
 		subtitle: 'Gestão de Restaurante',
-		descricao: 'Controle de Entradas estoque, cardapio, folhas de salários, cadastros de Funconários ...',
-		image: 'Fundo_GestApp02.jpg',
-		more: 'saber mais'
+		descricao: 'Controle de Entradas estoque, cardápio, folhas de salários, cadastros de Funcionários e mais ...',
+		image: '0aa74192-bb9a-4772-b3a5-60e945b5ec3b.jpg',
+		more: '#'
 	},
 	{
 		id: 3,
-		title: 'Marketing Digital',
+		title: 'MARKETING DIGITAL',
 		subtitle: 'Cuidamos Da Sua Presença Digital',
-		descricao: 'Criamos a sua identidade virtual, redes sociais anúncios e mais ...',
-		image: 'fundo_Gest07.png',
-		more: 'saber mais'
+		descrição: 'Criamos a sua identidade virtual, aumentamos o engajamento nas suas redes sociais(aumento de seguidores, comentários e reações nas publicações) anúncios online e mais ...',
+		image: '95b91ce2-9467-40e6-8709-d328a665bf43.jpg',
+		more: '#'
 	},
 	{
 		id: 4,
-		title: 'APlicação Desktop',
+		title: 'APLICAÇÃO DESKTOP',
 		subtitle: 'Gestão De Colégios (escolas)',
-		descricao: 'Cadastro de alunos, turmas, hostoricos, Funcionários, controle Financeiro e mais   ...',
-		image: 'fundo_GestApp03.jpg',
-		more: 'saber mais'
+		descricao: 'Cadastro de alunos, turmas, históricos, Funcionários, controle Financeiro, impressão de recibo e mais   ...',
+		image: 'ba5c48a6-519a-44ff-9388-edaef3be9f99.jpg',
+		more: '#'
 	},
+	{
+		id: 4,
+		title: 'WEB SITE',
+		subtitle: 'Construção de sites',
+		descricao: 'Construimos sites personalizados, ao seu modelo de de negócio,c com design moderno.',
+		image: '88bbc8a7-abc7-4b23-b706-991def900521.jpg',
+		more: '#'
+	},
+
+
+{id: 4,
+		title: 'APLICAÇÃO WEB',
+		subtitle: 'Construímos Aplicações Web ',
+		descricao: 'Oferecemos aplicações web, para qualquer tipo de negócio, melhorando a gestão do seu negócio dando maior controle das  suas atividades em qualquer hora e lugar.',
+		image: '6bcaeb00-156a-4ea4-9fc8-8799554c3374.jpg',
+		more: '#'
+	},
+
 ];
-*/
+
 function Publicidades() {
 	//const classes = useStyles();
-	const [slides, setSlides] = useState([]);
+	const [slides, setSlides] = useState(slids);
 	const [currentSlide, setCurrentSlide] = useState(0);
   	const slideLength = slides.length;
 
@@ -61,7 +79,7 @@ function Publicidades() {
   	function auto() {
   	  slideInterval = setInterval(nextSlide, intervalTime);
   	}
-
+  	/*
   	useEffect(() => {
     	setCurrentSlide(0);
     	fetch("http://localhost:8000/publicidadesdb/")
@@ -71,7 +89,7 @@ function Publicidades() {
         })  
 
   	}, []);
-
+	
 
   	useEffect(() => {
     	if (autoScroll) {
@@ -79,7 +97,7 @@ function Publicidades() {
     	}
     	return () => clearInterval(slideInterval);
   	}, [currentSlide]);
-
+	*/
 
 	return (
 		<>

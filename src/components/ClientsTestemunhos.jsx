@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-/*const slides = [
+const slids = [
 	{
 		id: 1,
 		work: 'APP web e Mobile',
@@ -58,12 +58,12 @@ import Slider from "react-slick";
 		more: 'saber mais'
 	},
 ];
-*/
+
 
 function ClientsTestemunhos(props) {
 
 	const { primery, secudary } = props;
-	const [slides, setSlides] = useState([])
+	const [slides, setSlides] = useState(slids)
 	const settings = {
 	  dots: true,
 	  infinite: false,
@@ -99,18 +99,20 @@ function ClientsTestemunhos(props) {
 	  ]
 	}
 
-	useEffect(() => {
-		let tot = 0;  
-        fetch("http://localhost:8000/messagedb/")
-        .then((response)=>response.json())
-        .then((responseJson)=>{
-            //console.log(responseJson)            
-            setSlides(responseJson)
+	/*
+		useEffect(() => {
+			let tot = 0;  
+	        fetch("http://localhost:8000/messagedb/")
+	        .then((response)=>response.json())
+	        .then((responseJson)=>{
+	            //console.log(responseJson)            
+	            setSlides(responseJson)
 
-        })  
-        
-        
-    }, [])
+	        })  
+	        
+	        
+	    }, [])
+	*/
 
 	return(
 		<Box
