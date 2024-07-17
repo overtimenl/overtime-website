@@ -33,7 +33,7 @@ const sli = [
 		id: 3,
 		work: 'APP Desktop',
 		name: 'GESTÃO DE FARMÁCIA',
-		image: 'e158c452-493a-4ce3-ba4d-2e456550a3b8.jpg',
+		image: 'e158c452-493a-4ce3-ba4d-2e456550a3b8.jpg', 
 		conteudo: 'Essa aplicação é para gestão de Farmácia, para pequenas e médias, tem os paineis de vendedor e de administrador, permitindo  gerar fatura, registro de folhas de salários, controle de fluxo de caixa e mais..',
 		more: 'saber mais',
 		whats: 'https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0' 
