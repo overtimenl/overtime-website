@@ -27,7 +27,7 @@ function Services(props) {
 						fontSize: '1rem',
 						fontWeight: 700,
 						'@media (max-width: 800px)': { fontSize: '.8rem' },
-						'@media (max-width: 300px)': { fontSize: '.7rem' },
+						'@media (max-width: 320px)': { fontSize: '.7rem' },
 					}}
 				>
 					O melhor para o seu negócio
@@ -39,7 +39,7 @@ function Services(props) {
 						fontFamily: 'Arvo, serif',
 						'@media (max-width: 800px)': { fontSize: '1.8rem' },
 						'@media (max-width: 400px)': { fontSize: '1.4rem' },
-						'@media (max-width: 300px)': { fontSize: '1rem' },
+						'@media (max-width: 320px)': { fontSize: '1.1rem' },
 					}}
 
 				>

@@ -41,7 +41,7 @@ function Emprove(props) {
 						color: '#fff',
 						fontFamily: 'Arvo, serif',
 						'@media (max-width: 800px)': { fontSize: '1.8rem' },
-						'@media (max-width: 400px)': { fontSize: '1.4rem' },
+						'@media (max-width: 400px)': { fontSize: '1.2rem' },
 						
 					}}
 
