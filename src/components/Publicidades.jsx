@@ -24,7 +24,7 @@ const slids = [
 		id: 3,
 		title: 'MARKETING DIGITAL',
 		subtitle: 'Cuidamos Da Sua Presença Digital',
-		descrição: 'Criamos a sua identidade virtual, aumentamos o engajamento nas suas redes sociais(aumento de seguidores, comentários e reações nas publicações) anúncios online e mais ...',
+		descricao: 'Criamos a sua identidade virtual, aumentamos o engajamento nas suas redes sociais(aumento de seguidores, comentários e reações nas publicações) anúncios online e mais ...',
 		image: '95b91ce2-9467-40e6-8709-d328a665bf43.jpg',
 		more: '#'
 	},

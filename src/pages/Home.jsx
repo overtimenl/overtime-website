@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AppBar, Divider, Box, Button, Grid, Tab, Tabs, Toolbar, Typography, Link, Drawer, IconButton, Paper  } from '@mui/material';
 import Container from '@mui/material/Container';
-import {Facebook, Twitter, Instagram, Menu, LinkedIn, LocalPhone, Watch, WhatsApp, Telegram} from '@mui/icons-material';
+import {Facebook, Twitter, Instagram, Menu, LinkedIn, LocalPhone, Watch, WhatsApp, Telegram, Close} from '@mui/icons-material';
 import logo from '../assets/OverLogo.png';
 import Publicidades from '../components/Publicidades.jsx';
 import Services from '../components/Services.jsx';
@@ -526,32 +526,40 @@ function Home(props) {
 					sx={{
 						display: { xs: 'flex', md: 'none', sm: 'none' },
 						justifyContent: 'start',
+						ml: 1
 						
 					}}
 				>
-					<Button
-		            size="large"
-		            edge="start"
-		            //color="inherit"
-		            aria-label="menu"
-		            sx={{ color: `${primery}`,}}
-		            startIcon={<Menu />}
-		            onClick={()=> setOpenMenu(
-		            	openMenu == 'none' ? 'flex': 'none'
-		            )}
-		          >
+				{openMenu == 'none' ? 
+					<IconButton
+			            size="large"
+			            edge="start"
+			            //color="inherit"
+			            aria-label="menu"
+			            sx={{ color: `${secudary}`,}}
+			            //startIcon={}
+			            onClick={()=> setOpenMenu('flex')}
+		          	>
 		            
-		            <Typography
-			          	sx={{
-			          		fontWeight: 700,
-			          		//fontSize: '.rem',
-			          		color: `${primery}`,
-			          		
-			          	}}
-			          >
-		          	Menu
-		          </Typography> 
-		          </Button>
+		            	<Menu />
+		          	</IconButton>
+					:
+					<IconButton
+			            size="large"
+			            edge="start"
+			            //color="inherit"
+			            aria-label="menu"
+			            sx={{ color: `${primery}`,}}
+			            //startIcon={}
+			            onClick={()=> setOpenMenu('none')}
+		          	>
+		            
+		            	<Close />
+		          	</IconButton>
+
+
+				}
+					
 				</Box>
 				<Box
 	          	sx={{

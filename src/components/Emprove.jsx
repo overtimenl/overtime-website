@@ -279,7 +279,7 @@ function Emprove(props) {
 											fontWeight: 700,
 											color: '#fff',
 											fontFamily: 'Arvo, serif',
-											'@media (max-width: 800px)': { fontSize: '1.5rem' },
+											'@media (max-width: 800px)': { fontSize: '1.3rem' },
 
 										}}
 									>

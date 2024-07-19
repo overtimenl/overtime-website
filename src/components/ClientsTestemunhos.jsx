@@ -124,6 +124,7 @@ function ClientsTestemunhos(props) {
 					justifyContent: 'center',
 					flexDirection: 'column',
 					alignItems: 'center',
+					textAlign: 'center',
 					//position: 'relative',
 					color: `${primery}`,
 					mt: 5
@@ -148,7 +149,7 @@ function ClientsTestemunhos(props) {
 						fontFamily: 'Arvo, serif',
 						'@media (max-width: 800px)': { fontSize: '1.8rem' },
 						'@media (max-width: 400px)': { fontSize: '1.4rem' },
-						
+						'@media (max-width: 300px)': { fontSize: '1rem' },
 					}}
 
 				>
@@ -218,6 +219,7 @@ function ClientsTestemunhos(props) {
 														fontSize: '.7rem',
 														//fontWeight: 700,
 														fontFamily: 'Arvo, serif',
+														textAlign: 'justify',
 														//textAlign: 'center',
 														//width: 225,
 													}}
