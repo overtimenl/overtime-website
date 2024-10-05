@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arvo', serif;
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(254, 254, 255);
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
   background-color: #171010;
 }
