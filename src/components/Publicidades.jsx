@@ -8,10 +8,10 @@ const slids = [
   {
     id: 1,
     title: "WEB SITE",
-    subtitle: "Construção de sites",
+    subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
     tipo: "SERVICO",
     descricao:
-      "Está na hora de destacar sua marca online! Criamos sites que impressionam e conectam sua empresa com o público certo. Não fique para trás! ",
+      " Transforme sua marca com um site personalizado! Inclui domínio, suporte e consultoria de marketing digital por apenas 400 mil Kz. Não perca a chance de crescer! ",
     image: "88bbc8a7-abc7-4b23-b706-991def900521.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
