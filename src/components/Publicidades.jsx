@@ -11,7 +11,7 @@ const slids = [
     subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
     tipo: "SERVICO",
     descricao:
-      " Atenção, donos de negócios: Oferta limitada para os primeiros clientes! Construa seu site personalizado por apenas 400 mil Kwanzas, com domínio grátis por um ano. Garanta já! Pagamento em 4 parcelas durante o desenvolvimento. ",
+      "Assuma o próximo passo para o sucesso do seu negócio! Vagas limitadas para criação de sites a apenas 400 mil Kwanzas. Inclui consultoria digital, domínio gratuito e suporte técnico. Pagamento em 4 parcelas, a ultima paga apenas após o site estar online! Aproveite essa oportunidade única!"",
     image: "88bbc8a7-abc7-4b23-b706-991def900521.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
