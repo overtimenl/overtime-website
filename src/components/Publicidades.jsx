@@ -21,7 +21,7 @@ const slids = [
     subtitle: "Cuidamos Da Sua Presença Digital",
     tipo: "SERVICO",
     descricao:
-      "Transforme engajamento em vendas! Otimize suas redes sociais com mais interações e anúncios online eficientes que convertem. Quer crescer de verdade? ",
+      "Transforme engajamento em vendas! Otimize suas redes sociais com mais interações e anúncios online eficientes que convertem. Quer crescer de verdade?",
     image: "95b91ce2-9467-40e6-8709-d328a665bf43.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
