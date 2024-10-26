@@ -41,7 +41,7 @@ const slids = [
     subtitle: "Construímos Aplicações DESKTOP",
     tipo: "SERVICO",
     descricao:
-      "Transforme a eficiência do seu negócio! Desenvolvemos aplicações desktop poderosas para simplificar e automatizar suas operações. Quer saber como podemos ajudar? ",
+      "Atenção, donos de negócios: Oferta limitada para os primeiros clientes! Construa seu site personalizado por apenas 400 mil Kwanzas, com domínio grátis por um ano. Garanta já! Pagamento em 4 parcelas durante o desenvolvimento.",
     image: "6bcaeb00-156a-4ea4-9fc8-8799554c3374.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
