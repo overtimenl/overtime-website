@@ -11,7 +11,7 @@ const slids = [
     subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
     tipo: "SERVICO",
     descricao:
-      " Transforme sua marca com um site personalizado! Inclui domínio, suporte e consultoria de marketing digital por apenas 400 mil Kz. Não perca a chance de crescer! ",
+      " Atenção, donos de negócios: Oferta limitada para os primeiros clientes! Construa seu site personalizado por apenas 400 mil Kwanzas, com domínio grátis por um ano. Garanta já! Pagamento em 4 parcelas durante o desenvolvimento. ",
     image: "88bbc8a7-abc7-4b23-b706-991def900521.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
@@ -41,7 +41,7 @@ const slids = [
     subtitle: "Construímos Aplicações DESKTOP",
     tipo: "SERVICO",
     descricao:
-      "Atenção, donos de negócios: Oferta limitada para os primeiros clientes! Construa seu site personalizado por apenas 400 mil Kwanzas, com domínio grátis por um ano. Garanta já! Pagamento em 4 parcelas durante o desenvolvimento.",
+      "Transforme a eficiência do seu negócio! Desenvolvemos aplicações desktop poderosas para simplificar e automatizar suas operações. Quer saber como podemos ajudar? ",
     image: "6bcaeb00-156a-4ea4-9fc8-8799554c3374.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
