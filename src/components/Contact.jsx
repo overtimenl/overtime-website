@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import { useState } from "react";
 import {
   Box,
@@ -6,9 +7,23 @@ import {
   Grid,
   TextField,
   MenuItem,
+  IconButton,
   Button,
 } from "@mui/material";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Menu,
+  LinkedIn,
+  LocalPhone,
+  Watch,
+  WhatsApp,
+  Telegram,
+  Close,
+} from "@mui/icons-material";
 import classes from "./Contact.module.css";
+import Contato from "../assets/CONTATO.png";
 
 const currencies = [
   {
@@ -97,91 +112,283 @@ function Contact(props) {
           }}
         />
       </Box>
+
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          mt: 2,
-          mb: 5,
-          "@media (max-width: 800px)": {
+          justifyContent: "space-between",
+          p: 4,
+        }}
+      >
+        <Box
+          sx={{
+            display: { xs: "none", md: "flex" },
+            height: "100%",
+            width: "100%",
+            p: 1,
+            mt: 5,
+            "@media (max-width: 1050px)": {
+              height: "80%",
+              width: "80%",
+            },
+          }}
+        >
+          <img width={470} height={350} src={Contato} />
+        </Box>
+
+        <Box
+          sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-          },
-        }}
-      >
-        <form
-          method="post"
-          onSubmit={submitForm}
-          style={{ width: "100%" }}
-          className={classes.formContact}
+            //p: 2,
+            width: 850,
+            "@media (max-width: 800px)": {
+              //width: 250,
+            },
+          }}
         >
-          <div className="input-box">
-            <input
-              type="text"
-              placeholder="Informe seu nome"
-              name="nome"
-              onChange={handleChannge}
-              value={message.nome}
-            />
-          </div>
-          <div className="input-box">
-            <input
-              type="email"
-              placeholder="Informe seu email"
-              name="email"
-              onChange={handleChannge}
-              value={message.email}
-            />
-          </div>
-          <div className="input-box">
-            <select id="pet-select" name="conteudo" onChange={handleChannge}>
-              <option value="">Selecione o assunto</option>
-              <option value="Aplicações Desktop">Aplicações Desktop</option>
-              <option value="App Web e Mobile">App Web e Mobile</option>
-              <option value="Marketing Digital">Marketing Digital</option>
-              <option value="Produção Multimidia">Produção Multimidia</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
-          <div className="input-box message-box">
-            <textarea
-              cols={30}
-              rows={10}
-              name="conteudo"
-              placeholder="Insere a mensagem"
-              onChange={handleChannge}
-            >
-              {message.conteudo}
-            </textarea>
-          </div>
-          <Button
-            type="submit"
-            //onClick={}
-            size="small"
+          <Box
             sx={{
-              margin: "8px 0",
-              color: "white",
-              border: "none",
-              cursor: "pointer",
-              //height: '25px',
-              p: 1,
-              textDecoration: "none",
-              fontSize: "14px",
-              borderRadius: "40px 40px 40px 40px",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              width: "100%",
+              borderRadius: 2,
               backgroundColor: `${secudary}`,
-              "&:hover": {
-                color: `${primery}`,
-                cursor: "pointer",
-                transition: "0.3s ease-in",
-              },
             }}
-            fullWidth
           >
-            Enviar
-          </Button>
-        </form>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                mt: 2,
+                //mb: 5,
+                width: "100%",
+                "@media (max-width: 800px)": {
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                },
+              }}
+            >
+              <form
+                method="post"
+                onSubmit={submitForm}
+                style={{ width: "100%" }}
+                className={classes.formContact}
+              >
+                <div className="input-box">
+                  <input
+                    type="text"
+                    placeholder="Informe seu nome"
+                    name="nome"
+                    onChange={handleChannge}
+                    value={message.nome}
+                  />
+                </div>
+                <div className="input-box">
+                  <input
+                    type="email"
+                    placeholder="Informe seu email"
+                    name="email"
+                    onChange={handleChannge}
+                    value={message.email}
+                  />
+                </div>
+                <div className="input-box">
+                  <select
+                    id="pet-select"
+                    name="conteudo"
+                    onChange={handleChannge}
+                  >
+                    <option value="">Selecione o assunto</option>
+                    <option value="Aplicações Desktop">
+                      Aplicações Desktop
+                    </option>
+                    <option value="App Web e Mobile">App Web e Mobile</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                    <option value="Produção Multimidia">
+                      Produção Multimidia
+                    </option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+                <div className="input-box message-box">
+                  <textarea
+                    cols={20}
+                    rows={5}
+                    name="conteudo"
+                    placeholder="Insere a mensagem"
+                    onChange={handleChannge}
+                  >
+                    {message.conteudo}
+                  </textarea>
+                </div>
+                <Button
+                  type="submit"
+                  //onClick={}
+                  size="small"
+                  sx={{
+                    margin: "8px 0",
+                    color: "white",
+                    border: "none",
+                    cursor: "pointer",
+                    //height: '25px',
+                    p: 1,
+                    textDecoration: "none",
+                    fontSize: "14px",
+                    //borderRadius: 5,
+                    backgroundColor: `${primery}`,
+                    "&:hover": {
+                      //color: `${secudary}`,
+                      cursor: "pointer",
+                      transition: "0.3s ease-in",
+                    },
+                  }}
+                  fullWidth
+                >
+                  Enviar
+                </Button>
+              </form>
+            </Box>
+
+            <Box
+              sx={{
+                display: "flex",
+                mb: 2,
+              }}
+            >
+              <IconButton
+                size="small"
+                href="https://www.facebook.com/profile.php?id=61558712668202"
+                target="_blank"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  "&:hover": {
+                    //bgcolor: "none",
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <Facebook
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="small"
+                href="https://www.instagram.com/overtime_nl/"
+                target="_blank"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  ml: 0.5,
+                  "&:hover": {
+                    //bgcolor: "white",
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <Instagram
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="small"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  ml: 0.5,
+                  "&:hover": {
+                    //bgcolor: 'white',
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <LinkedIn
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="small"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  ml: 0.5,
+                  "&:hover": {
+                    //bgcolor: 'white',
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <Twitter
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="small"
+                href="https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0"
+                target="_blank"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  ml: 0.5,
+                  "&:hover": {
+                    //bgcolor: 'white',
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <WhatsApp
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+              <IconButton
+                size="small"
+                sx={{
+                  //bgcolor: `${secudary}`,
+                  color: "white",
+                  ml: 0.5,
+                  "&:hover": {
+                    //bgcolor: 'white',
+                    cursor: "pointer",
+                    color: `${"#FC1B08"}`,
+                    transition: "all 400ms",
+                  },
+                }}
+              >
+                <Telegram
+                  sx={{
+                    fontSize: "25px",
+                  }}
+                />
+              </IconButton>
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </>
   );
