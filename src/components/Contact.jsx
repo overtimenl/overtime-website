@@ -127,13 +127,22 @@ function Contact(props) {
             width: "100%",
             p: 1,
             mt: 5,
+            ml: 8,
+            mr: -4,
+            "@media (max-width: 1100px)": {
+              ml: 2,
+            },
             "@media (max-width: 1050px)": {
-              height: "80%",
-              width: "80%",
+              mr: 2,
+              ml: -1,
+            },
+            "@media (max-width: 1000px)": {
+              mr: 2,
+              ml: -4,
             },
           }}
         >
-          <img width={470} height={350} src={Contato} />
+          <img width={400} height={300} src={Contato} />
         </Box>
 
         <Box
@@ -165,7 +174,7 @@ function Contact(props) {
                 justifyContent: "center",
                 alignItems: "center",
                 mt: 2,
-                //mb: 5,
+                mb: -1,
                 width: "100%",
                 "@media (max-width: 800px)": {
                   display: "flex",
@@ -219,7 +228,7 @@ function Contact(props) {
                 <div className="input-box message-box">
                   <textarea
                     cols={20}
-                    rows={5}
+                    rows={3}
                     name="conteudo"
                     placeholder="Insere a mensagem"
                     onChange={handleChannge}

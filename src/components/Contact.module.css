@@ -17,3 +17,13 @@ select {
   border: 1px solid #ddd;
   border-radius: 4px 4px 4px 4px;
 }
+.image {
+  width: 400;
+  height: 300;
+}
+@media only screen and (max-width: 600px) {
+  .image {
+    width: 350;
+    height: 250;
+  }
+}
