@@ -39,7 +39,7 @@
 
 .content {
   position: absolute;
-  top: 15rem;
+  top: 10rem;
   left: 10rem;
   width: 60%;
   opacity: 0;
@@ -57,7 +57,7 @@
   }
   to {
     visibility: visible;
-    top: 15rem;
+    top: 10rem;
   }
 }
 
@@ -69,6 +69,31 @@
 .content h2 {
   color: #ed1c07;
   font-weight: bold;
+  font-size: 35pt;
+}
+.content h4 {
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.content p {
+  font-size: 16pt;
+}
+
+@keyframes blink {
+  0% {
+    color: #ffffff; /* Cor inicial */
+  }
+  50% {
+    color: #dce00d; /* Cor durante o "piscado" */
+  }
+  100% {
+    color: #ffffff; /* Retorna à cor inicial */
+  }
+}
+
+.content h4 {
+  animation: blink 1s infinite; /* 1 segundo de duração e loop infinito */
 }
 
 .current {
@@ -114,12 +139,12 @@
     font-size: 20px;
   }
   .content h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .content h4 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .content p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

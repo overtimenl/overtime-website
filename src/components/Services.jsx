@@ -129,9 +129,9 @@ function Services(props) {
                       width: 225,
                     }}
                   >
-                    Vendemos os aplicações desktop para gestão para gestão de
-                    pequenas e medias empresas, personalisadas para qualquer
-                    tipo de negócios.
+                    Nosso sistema de gestão desktop é feito para o seu negócio,
+                    ajustado às suas necessidades para simplificar processos e
+                    aumentar a produtividade.
                   </Typography>
                 </Box>
               </Grid>
@@ -255,9 +255,9 @@ function Services(props) {
                       width: 225,
                     }}
                   >
-                    Cuidamos da presenca online do seu negócio, gerenciandos as
+                    Cuidamos da presenca online do seu negócio, gerenciando as
                     suas redes sociais com stores reels e postes e anuncios
-                    alcançando o maior numero de clientes ou consumidores.
+                    alcançando o maior número de clientes ou consumidores.
                   </Typography>
                 </Box>
               </Grid>
