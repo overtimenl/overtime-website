@@ -85,7 +85,7 @@
     color: #ffffff; /* Cor inicial */
   }
   50% {
-    color: #dce00d; /* Cor durante o "piscado" */
+    color: #07db47; /* Cor durante o "piscado" */
   }
   100% {
     color: #ffffff; /* Retorna à cor inicial */
