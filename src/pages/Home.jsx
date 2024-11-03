@@ -233,7 +233,7 @@ function Home(props) {
                 ml: 6.5,
                 "@media (max-width: 500px)": {
                   fontSize: ".7rem",
-                  ml: 8,
+                  ml: 11,
                 },
               }}
             >
@@ -332,7 +332,10 @@ function Home(props) {
                     fontWeight: 700,
                     fontSize: ".5rem",
                     color: `${secudary}`,
-                    ml: 7,
+                    ml: 9,
+                    "@media (max-width: 900px)": {
+                      ml: 9,
+                    },
                   }}
                 >
                   & Negócio Limpo
