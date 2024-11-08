@@ -79,13 +79,17 @@
   font-weight: bold;
   font-size: 35pt;
 }
+
 .content h4 {
   font-weight: bold;
   font-size: 20pt;
 }
+.content h3 {
+  font-size: 13pt;
+}
 
 .content p {
-  font-size: 16pt;
+  font-size: 12pt;
 }
 
 @keyframes blink {

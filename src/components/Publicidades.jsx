@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { Button, Typography } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
+import parse from "html-react-parser";
 import classes from "./Publicidades.module.css";
 
 const slids = [
@@ -10,8 +11,15 @@ const slids = [
     title: "WEB SITE",
     subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
     tipo: "SERVICO",
-    descricao:
-      "Assuma o próximo passo para o sucesso do seu negócio! Vagas limitadas para criação de sites a apenas 400 mil Kwanzas. Inclui consultoria digital, domínio gratuito e suporte técnico. Pagamento em 4 parcelas, a ultima paga apenas após o site estar online! Aproveite essa oportunidade única!",
+    descricao: `
+        <h3>Exclusivo: site profissional, personalizado e seguro para o seu negócio!</h2>
+
+        <p> - Hospedagem e domínio GRÁTIS no primeiro ano.</p>
+        <p> - 6 meses de suporte técnico e uma consultoria em Marketing Digital para garantir o sucesso!</p>
+        <p> - Aproveite por apenas 400 mil kz em 4 parcelas flexíveis, com a última paga só depois do site estar ao vivo.</p>
+        
+        <h5>Transforme sua presença digital agora mesmo!"</h5>
+      `,
     image: "88bbc8a7-abc7-4b23-b706-991def900521.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
@@ -159,7 +167,7 @@ function Publicidades() {
                       <div className={classes.content}>
                         <h2>{slide.title}</h2>
                         <h4>{slide.subtitle}</h4>
-                        <p>{slide.descricao}</p>
+                        <div>{parse(slide.descricao)}</div>
                         {slide.tipo == "SERVICO" ? (
                           <Button
                             variant="contained"
