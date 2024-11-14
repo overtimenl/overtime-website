@@ -12,13 +12,14 @@ const slids = [
     subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
     tipo: "SERVICO",
     descricao: `
-        <h3>Exclusivo: site profissional, personalizado e seguro para o seu negócio!</h2>
+        <h3>Site personalizado com benefícios únicos!</h2>
 
-        <p> - Hospedagem e domínio GRÁTIS no primeiro ano.</p>
-        <p> - 6 meses de suporte técnico e uma consultoria em Marketing Digital para garantir o sucesso!</p>
-        <p> - Aproveite por apenas 400 mil kz em 4 parcelas flexíveis, com a última paga só depois do site estar ao vivo.</p>
+        <p> Hospedagem e domínio <strong>GRÁTIS</strong> no primeiro ano.</p>
+        <p> 6 meses de assistência técnica e consultoria em Marketing Digital.</p>
+        <p><strong> Apenas 400 mil kz, pagamento em 4 parcelas suaves,</strong> e a última só é paga quando 
+        seu site estiver pronto e funcionando! </p>
         
-        <h5>Transforme sua presença digital agora mesmo!"</h5>
+        <h5>Invista hoje e faça seu negócio crescer online!"</h5>
       `,
     image: "88bbc8a7-abc7-4b23-b706-991def900521.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
