@@ -82,10 +82,10 @@ function Contact(props) {
         <Typography
           variant="p"
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             fontWeight: 700,
             //color: '#fff',
-            "@media (max-width: 800px)": { fontSize: ".8rem" },
+            "@media (max-width: 800px)": { fontSize: "1.2rem" },
           }}
         >
           contate-nos
@@ -142,7 +142,7 @@ function Contact(props) {
             },
           }}
         >
-          <img width={400} height={300} src={Contato} />
+          <img width={400} height={200} src={Contato} />
         </Box>
 
         <Box
@@ -165,7 +165,7 @@ function Contact(props) {
               alignItems: "center",
               width: "100%",
               borderRadius: 2,
-              backgroundColor: `${secudary}`,
+              //backgroundColor: `${secudary}`,
             }}
           >
             <Box
@@ -276,11 +276,14 @@ function Contact(props) {
                 target="_blank"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
                     //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}
@@ -297,12 +300,14 @@ function Contact(props) {
                 target="_blank"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
-                  ml: 0.5,
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
-                    //bgcolor: "white",
+                    //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}
@@ -317,12 +322,14 @@ function Contact(props) {
                 size="small"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
-                  ml: 0.5,
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
-                    //bgcolor: 'white',
+                    //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}
@@ -337,12 +344,14 @@ function Contact(props) {
                 size="small"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
-                  ml: 0.5,
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
-                    //bgcolor: 'white',
+                    //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}
@@ -359,12 +368,14 @@ function Contact(props) {
                 target="_blank"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
-                  ml: 0.5,
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
-                    //bgcolor: 'white',
+                    //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}
@@ -379,12 +390,14 @@ function Contact(props) {
                 size="small"
                 sx={{
                   //bgcolor: `${secudary}`,
-                  color: "white",
-                  ml: 0.5,
+                  p: 1,
+                  //color: "white",
+                  color: `${secudary}`,
                   "&:hover": {
-                    //bgcolor: 'white',
+                    //bgcolor: "none",
+                    bgcolor: `${secudary}`,
                     cursor: "pointer",
-                    color: `${"#FC1B08"}`,
+                    color: `${"white"}`,
                     transition: "all 400ms",
                   },
                 }}

@@ -54,37 +54,6 @@ const slids = [
     image: "6bcaeb00-156a-4ea4-9fc8-8799554c3374.jpg",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
-  {
-    id: 5,
-    title: "APLICAÇÃO DESKTOP",
-    subtitle: "Gestão Financeira e RH",
-    tipo: "PRODUTO",
-    descricao:
-      "Controle de fluxo de caixa, folhas de salários, cadastros de Funcionários e mais ...",
-    image: "08a8db60-0f7b-4afc-a7ab-e7febb47d589.jpg",
-    more: "#",
-  },
-  {
-    id: 6,
-    title: "APLICAÇÃO DESKTOP",
-    subtitle: "Gestão de Restaurante",
-    tipo: "PRODUTO",
-    descricao:
-      "Controle de Entradas estoque, cardápio, folhas de salários, cadastros de Funcionários e mais ...",
-    image: "0aa74192-bb9a-4772-b3a5-60e945b5ec3b.jpg",
-    more: "#",
-  },
-
-  {
-    id: 7,
-    title: "APLICAÇÃO DESKTOP",
-    subtitle: "Gestão De Colégios (escolas)",
-    tipo: "PRODUTO",
-    descricao:
-      "Cadastro de alunos, turmas, históricos, Funcionários, controle Financeiro, impressão de recibo e mais   ...",
-    image: "ba5c48a6-519a-44ff-9388-edaef3be9f99.jpg",
-    more: "#",
-  },
 ];
 
 function Publicidades() {

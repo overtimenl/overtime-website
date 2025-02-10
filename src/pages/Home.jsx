@@ -64,7 +64,7 @@ function Home(props) {
             }}
           >
             <IconButton
-              size="small"
+              //size="small"
               href="https://www.facebook.com/profile.php?id=61558712668202"
               target="_blank"
               sx={{
@@ -78,10 +78,10 @@ function Home(props) {
                 },
               }}
             >
-              <Facebook fontSize="inherit" />
+              <Facebook sx={{ fontSize: 15 }} />
             </IconButton>
             <IconButton
-              size="small"
+              //size="small"
               href="https://www.instagram.com/overtime_nl/"
               target="_blank"
               sx={{
@@ -96,10 +96,10 @@ function Home(props) {
                 },
               }}
             >
-              <Instagram fontSize="inherit" />
+              <Instagram sx={{ fontSize: 15 }} />
             </IconButton>
             <IconButton
-              size="small"
+              //size="small"
               sx={{
                 bgcolor: `${secudary}`,
                 color: "white",
@@ -112,10 +112,10 @@ function Home(props) {
                 },
               }}
             >
-              <LinkedIn fontSize="inherit" />
+              <LinkedIn sx={{ fontSize: 15 }} />
             </IconButton>
             <IconButton
-              size="small"
+              //size="small"
               sx={{
                 bgcolor: `${secudary}`,
                 color: "white",
@@ -128,10 +128,10 @@ function Home(props) {
                 },
               }}
             >
-              <Twitter fontSize="inherit" />
+              <Twitter sx={{ fontSize: 15 }} />
             </IconButton>
             <IconButton
-              size="small"
+              //size="small"
               href="https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0"
               target="_blank"
               sx={{
@@ -146,10 +146,10 @@ function Home(props) {
                 },
               }}
             >
-              <WhatsApp fontSize="inherit" />
+              <WhatsApp sx={{ fontSize: 15 }} />
             </IconButton>
             <IconButton
-              size="small"
+              //size="small"
               sx={{
                 bgcolor: `${secudary}`,
                 color: "white",
@@ -162,7 +162,7 @@ function Home(props) {
                 },
               }}
             >
-              <Telegram fontSize="inherit" />
+              <Telegram sx={{ fontSize: 15 }} />
             </IconButton>
           </Box>
         </Box>
@@ -213,7 +213,7 @@ function Home(props) {
                 fontFamily: "Diphylleia, serif",
                 color: `${primery}`,
                 mt: -2,
-                ml: 0.5,
+                ml: -0.5,
                 "@media (max-width: 500px)": {
                   fontSize: "2.5rem",
                   mt: -2,
@@ -230,10 +230,10 @@ function Home(props) {
                 fontWeight: 700,
                 fontSize: ".6rem",
                 color: `${secudary}`,
-                ml: 6.5,
+                ml: 5.4,
                 "@media (max-width: 500px)": {
                   fontSize: ".7rem",
-                  ml: 11,
+                  ml: 6,
                 },
               }}
             >
@@ -302,7 +302,7 @@ function Home(props) {
                 component={"div"}
                 //sx={{ width: 45, height: 40, display: { xs: 'none', md: 'flex' }, mr: 1 }}
               >
-                <img src={logo} width={45} height={45} />
+                <img src={logo} width={38} height={38} />
               </Typography>
               <Box
                 sx={{
@@ -315,11 +315,12 @@ function Home(props) {
                   variant="p"
                   component={"div"}
                   sx={{
-                    fontWeight: 700,
-                    fontSize: "2rem",
+                    fontWeight: 800,
+                    fontSize: "2.5rem",
                     color: `${primery}`,
                     fontFamily: "Diphylleia, serif",
                     mt: -2,
+                    ml: -0.5,
                   }}
                 >
                   Overtime
@@ -330,9 +331,10 @@ function Home(props) {
                   component={"div"}
                   sx={{
                     fontWeight: 700,
-                    fontSize: ".5rem",
+                    fontSize: ".8rem",
                     color: `${secudary}`,
-                    ml: 9,
+                    ml: 5,
+                    mt: -1,
                     "@media (max-width: 900px)": {
                       ml: 9,
                     },
@@ -366,7 +368,7 @@ function Home(props) {
                       padding: "40px 16px",
                       textDecoration: "none",
                       fontWeight: 700,
-                      fontSize: "1rem",
+                      fontSize: "1.5rem",
                       color: `${primery}`,
                       "&:hover": {
                         bgcolor: `${secudary}`,
@@ -375,7 +377,7 @@ function Home(props) {
                         transition: "all 400ms",
                       },
                       "@media (max-width: 900px)": {
-                        fontSize: ".8rem",
+                        fontSize: "1.3rem",
                         padding: "30px 16px",
                       },
                     }}
@@ -392,7 +394,7 @@ function Home(props) {
                       padding: "40px 16px",
                       textDecoration: "none",
                       fontWeight: 700,
-                      fontSize: "1rem",
+                      fontSize: "1.5rem",
                       color: `${primery}`,
                       "&:hover": {
                         bgcolor: `${secudary}`,
@@ -401,7 +403,7 @@ function Home(props) {
                         transition: "all 400ms",
                       },
                       "@media (max-width: 900px)": {
-                        fontSize: ".8rem",
+                        fontSize: "1.3rem",
                         padding: "30px 16px",
                       },
                     }}
@@ -418,7 +420,7 @@ function Home(props) {
                       padding: "40px 16px",
                       textDecoration: "none",
                       fontWeight: 700,
-                      fontSize: "1rem",
+                      fontSize: "1.5rem",
                       color: `${primery}`,
                       "&:hover": {
                         bgcolor: `${secudary}`,
@@ -427,7 +429,7 @@ function Home(props) {
                         transition: "all 400ms",
                       },
                       "@media (max-width: 900px)": {
-                        fontSize: ".8rem",
+                        fontSize: "1.3rem",
                         padding: "30px 16px",
                       },
                     }}
@@ -447,7 +449,7 @@ function Home(props) {
                       padding: "40px 16px",
                       textDecoration: "none",
                       fontWeight: 700,
-                      fontSize: "1rem",
+                      fontSize: "1.5rem",
                       color: `${primery}`,
                       "&:hover": {
                         bgcolor: `${secudary}`,
@@ -456,7 +458,7 @@ function Home(props) {
                         transition: "all 400ms",
                       },
                       "@media (max-width: 900px)": {
-                        fontSize: ".8rem",
+                        fontSize: "1.3rem",
                         padding: "30px 16px",
                       },
                     }}
@@ -473,7 +475,7 @@ function Home(props) {
                       padding: "40px 16px",
                       textDecoration: "none",
                       fontWeight: 700,
-                      fontSize: "1rem",
+                      fontSize: "1.5rem",
                       color: `${primery}`,
                       "&:hover": {
                         bgcolor: `${secudary}`,
@@ -482,7 +484,7 @@ function Home(props) {
                         transition: "all 400ms",
                       },
                       "@media (max-width: 900px)": {
-                        fontSize: ".8rem",
+                        fontSize: "1.3rem",
                         padding: "30px 16px",
                       },
                     }}
@@ -548,7 +550,7 @@ function Home(props) {
             //startIcon={}
             onClick={() => setOpenMenu("flex")}
           >
-            <Menu />
+            <Menu sx={{ fontSize: 25 }} />
           </IconButton>
         ) : (
           <IconButton
@@ -560,7 +562,7 @@ function Home(props) {
             //startIcon={}
             onClick={() => setOpenMenu("none")}
           >
-            <Close />
+            <Close sx={{ fontSize: 25 }} />
           </IconButton>
         )}
       </Box>
@@ -591,7 +593,7 @@ function Home(props) {
                 padding: "20px 16px",
                 textDecoration: "none",
                 fontWeight: 700,
-                fontSize: ".8rem",
+                fontSize: "1.2rem",
                 color: `${primery}`,
                 "&:hover": {
                   bgcolor: `${secudary}`,
@@ -614,7 +616,7 @@ function Home(props) {
                 padding: "20px 16px",
                 textDecoration: "none",
                 fontWeight: 700,
-                fontSize: ".8rem",
+                fontSize: "1.2rem",
                 color: `${primery}`,
                 "&:hover": {
                   bgcolor: `${secudary}`,
@@ -637,7 +639,7 @@ function Home(props) {
                 padding: "20px 16px",
                 textDecoration: "none",
                 fontWeight: 700,
-                fontSize: ".8rem",
+                fontSize: "1.2rem",
                 color: `${primery}`,
                 "&:hover": {
                   bgcolor: `${secudary}`,
@@ -661,7 +663,7 @@ function Home(props) {
                 padding: "20px 16px",
                 textDecoration: "none",
                 fontWeight: 700,
-                fontSize: ".8rem",
+                fontSize: "1.2rem",
                 color: `${primery}`,
                 "&:hover": {
                   bgcolor: `${secudary}`,
@@ -684,7 +686,7 @@ function Home(props) {
                 padding: "20px 16px",
                 textDecoration: "none",
                 fontWeight: 700,
-                fontSize: ".8rem",
+                fontSize: "1.2rem",
                 color: `${primery}`,
                 "&:hover": {
                   bgcolor: `${secudary}`,
@@ -721,6 +723,7 @@ function Home(props) {
                 //size="small"
                 href="https://www.facebook.com/profile.php?id=61558712668202"
                 target="_blank"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -732,12 +735,13 @@ function Home(props) {
                   },
                 }}
               >
-                <Facebook />
+                <Facebook sx={{ fontSize: 20 }} />
               </IconButton>
               <IconButton
                 //size="small"
                 href="https://www.instagram.com/overtime_nl/"
                 target="_blank"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -750,10 +754,11 @@ function Home(props) {
                   },
                 }}
               >
-                <Instagram />
+                <Instagram sx={{ fontSize: 20 }} />
               </IconButton>
               <IconButton
                 //size="small"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -766,10 +771,11 @@ function Home(props) {
                   },
                 }}
               >
-                <LinkedIn />
+                <LinkedIn sx={{ fontSize: 20 }} />
               </IconButton>
               <IconButton
                 //size="small"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -782,12 +788,13 @@ function Home(props) {
                   },
                 }}
               >
-                <Twitter />
+                <Twitter sx={{ fontSize: 20 }} />
               </IconButton>
               <IconButton
                 //size="small"
                 href="https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0"
                 target="_blank"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -800,12 +807,13 @@ function Home(props) {
                   },
                 }}
               >
-                <WhatsApp />
+                <WhatsApp sx={{ fontSize: 20 }} />
               </IconButton>
               <IconButton
                 //size="small"
                 //href="https://www.facebook.com/profile.php?id=61558712668202"
                 //target="_blank"
+                size="large"
                 sx={{
                   bgcolor: `${secudary}`,
                   color: "white",
@@ -818,7 +826,7 @@ function Home(props) {
                   },
                 }}
               >
-                <Telegram />
+                <Telegram sx={{ fontSize: 20 }} />
               </IconButton>
             </Box>
           </Box>
@@ -858,7 +866,7 @@ function Home(props) {
                 },
               }}
             >
-              <Facebook />
+              <Facebook sx={{ fontSize: 20 }} />
             </IconButton>
             <IconButton
               size="large"
@@ -876,7 +884,7 @@ function Home(props) {
                 },
               }}
             >
-              <Instagram />
+              <Instagram sx={{ fontSize: 20 }} />
             </IconButton>
             <IconButton
               size="large"
@@ -892,7 +900,7 @@ function Home(props) {
                 },
               }}
             >
-              <LinkedIn fontSize="inherit" />
+              <LinkedIn sx={{ fontSize: 20 }} />
             </IconButton>
             <IconButton
               size="large"
@@ -908,7 +916,7 @@ function Home(props) {
                 },
               }}
             >
-              <Twitter />
+              <Twitter sx={{ fontSize: 20 }} />
             </IconButton>
             <IconButton
               size="large"
@@ -926,7 +934,7 @@ function Home(props) {
                 },
               }}
             >
-              <WhatsApp />
+              <WhatsApp sx={{ fontSize: 20 }} />
             </IconButton>
             <IconButton
               size="large"
@@ -942,7 +950,7 @@ function Home(props) {
                 },
               }}
             >
-              <Telegram />
+              <Telegram sx={{ fontSize: 20 }} />
             </IconButton>
           </Box>
         </Box>

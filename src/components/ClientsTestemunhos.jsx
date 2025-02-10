@@ -143,10 +143,10 @@ function ClientsTestemunhos(props) {
         <Typography
           variant="p"
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             fontWeight: 700,
-            "@media (max-width: 800px)": { fontSize: ".9rem" },
-            "@media (max-width: 320px)": { fontSize: ".7rem" },
+            "@media (max-width: 800px)": { fontSize: "1.2rem" },
+            "@media (max-width: 320px)": { fontSize: "1.2rem" },
           }}
         >
           lêr nossos
@@ -220,7 +220,7 @@ function ClientsTestemunhos(props) {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: ".7rem",
+                          fontSize: "1rem",
                           //fontWeight: 700,
                           fontFamily: "Arvo, serif",
                           textAlign: "justify",
@@ -232,7 +232,7 @@ function ClientsTestemunhos(props) {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: ".7rem",
+                          fontSize: ".8rem",
                           fontWeight: 700,
                           fontFamily: "Arvo, serif",
                           //'@media (max-width: 800px)': { fontSize: '1.5rem' },
@@ -250,8 +250,8 @@ function ClientsTestemunhos(props) {
                         cursor: "pointer",
                         textDecoration: "none",
                         fontWeight: "bold",
-                        borderRadius: "5px 5px 5px 5px",
-                        fontSize: "10px",
+                        borderRadius: 0,
+                        fontSize: "8px",
                         backgroundColor: "#ED1C07",
                         "&:hover": {
                           color: "#171010",

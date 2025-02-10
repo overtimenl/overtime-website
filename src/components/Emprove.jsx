@@ -25,11 +25,11 @@ function Emprove(props) {
         <Typography
           variant="p"
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             fontWeight: 700,
             color: "#fff",
             //fontFamily: 'A, serif',
-            "@media (max-width: 800px)": { fontSize: ".8rem" },
+            "@media (max-width: 800px)": { fontSize: "1.2rem" },
           }}
         >
           Nossos números
@@ -99,7 +99,7 @@ function Emprove(props) {
                   >
                     <Typography
                       sx={{
-                        fontSize: "3.5rem",
+                        fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
                       }}
@@ -109,7 +109,7 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: "1.2rem",
+                      fontSize: "2rem",
                       fontWeight: 700,
                       color: "#fff",
                       fontFamily: "Afacad Flux, serif",
@@ -145,7 +145,7 @@ function Emprove(props) {
                   >
                     <Typography
                       sx={{
-                        fontSize: "3.5rem",
+                        fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
                       }}
@@ -155,7 +155,7 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: "1.2rem",
+                      fontSize: "2rem",
                       fontWeight: 700,
                       color: "#fff",
                       fontFamily: "Afacad Flux, serif",
@@ -191,7 +191,7 @@ function Emprove(props) {
                   >
                     <Typography
                       sx={{
-                        fontSize: "3.5rem",
+                        fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
                       }}
@@ -201,7 +201,7 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: "1.2rem",
+                      fontSize: "2rem",
                       fontWeight: 700,
                       color: "#fff",
                       fontFamily: "Afacad Flux, serif",
@@ -238,7 +238,7 @@ function Emprove(props) {
                   >
                     <Typography
                       sx={{
-                        fontSize: "3.5rem",
+                        fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
                       }}
@@ -248,7 +248,7 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: "1.2rem",
+                      fontSize: "2rem",
                       fontWeight: 700,
                       color: "#fff",
                       fontFamily: "Afacad Flux, serif",

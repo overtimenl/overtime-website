@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  width: 0;
+  height: 100px;
+  border-left: 1150px solid #ed1c07;
+  border-bottom: 200px solid transparent;
+}
+.titulo {
+  position: absolute;
+  margin-left: -1100px;
+  color: white;
+}
+.titulo h1 {
+  margin-top: 50px;
+}
+.footer {
+  display: flex;
+  background-color: #171010;
+  justify-content: space-between;
+  align-items: center;
+}
+.embla__viewport {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem; /* 12 * 0.25rem */
+  height: 14rem; /* 56 * 0.25rem */
+  max-width: 32rem; /* lg size */
+  border: 1px solid #000; /* ou personalize como necessário */
+}
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex; /* Alinhado com a classe flex */
+  align-items: center; /* Alinhado com a classe items-center */
+  justify-content: center; /* Alinhado com a classe justify-center */
+}

@@ -26,10 +26,10 @@ function Services(props) {
         <Typography
           variant="p"
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             fontWeight: 700,
-            "@media (max-width: 800px)": { fontSize: ".8rem" },
-            "@media (max-width: 320px)": { fontSize: ".7rem" },
+            "@media (max-width: 800px)": { fontSize: "1.2rem" },
+            "@media (max-width: 320px)": { fontSize: "1rem" },
           }}
         >
           O melhor para o seu negócio
@@ -100,7 +100,7 @@ function Services(props) {
                   <Typography
                     sx={{
                       fontSize: "2rem",
-                      //fontWeight: 700,
+                      fontWeight: 700,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.8rem" },
                     }}
@@ -122,16 +122,16 @@ function Services(props) {
                   />
                   <Typography
                     sx={{
-                      fontSize: ".8rem",
-                      //fontWeight: 700,
+                      fontSize: "1rem",
+                      //fontWeight: 600,
                       fontFamily: "Arvo, serif",
                       textAlign: "center",
                       width: 225,
                     }}
                   >
-                    Nosso sistema de gestão desktop é feito para o seu negócio,
-                    ajustado às suas necessidades para simplificar processos e
-                    aumentar a produtividade.
+                    Com tecnologia avançada e foco na sua necessidade, nossos
+                    aplicativos desktop garantem uma gestão mais eficiente e
+                    produtiva para o seu negócio.
                   </Typography>
                 </Box>
               </Grid>
@@ -163,7 +163,7 @@ function Services(props) {
                   <Typography
                     sx={{
                       fontSize: "2rem",
-                      //fontWeight: 700,
+                      fontWeight: 700,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.8rem" },
                     }}
@@ -185,16 +185,16 @@ function Services(props) {
                   />
                   <Typography
                     sx={{
-                      fontSize: ".8rem",
+                      fontSize: "1rem",
                       //fontWeight: 700,
                       fontFamily: "Arvo, serif",
                       textAlign: "center",
                       width: 225,
                     }}
                   >
-                    Criamos sites, aplicações web e mobile, para qualquer tipo
-                    de negócio, ajudamos na hospedagem e na manutenção das,
-                    aplicações criadas.
+                    Precisa de um site ou aplicativo para o seu negócio? Criamos
+                    soluções web e mobile personalizadas e ainda cuidamos da
+                    hospedagem e manutenção!
                   </Typography>
                 </Box>
               </Grid>
@@ -226,7 +226,7 @@ function Services(props) {
                   <Typography
                     sx={{
                       fontSize: "2rem",
-                      //fontWeight: 700,
+                      fontWeight: 700,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.8rem" },
                     }}
@@ -248,16 +248,16 @@ function Services(props) {
                   />
                   <Typography
                     sx={{
-                      fontSize: ".8rem",
+                      fontSize: "1rem",
                       //fontWeight: 700,
                       fontFamily: "Arvo, serif",
                       textAlign: "center",
                       width: 225,
                     }}
                   >
-                    Cuidamos da presenca online do seu negócio, gerenciando as
-                    suas redes sociais com stores reels e postes e anuncios
-                    alcançando o maior número de clientes ou consumidores.
+                    Cuidamos do seu marketing digital! Criamos e gerenciamos
+                    conteúdos para redes sociais, incluindo stories, reels,
+                    posts e anúncios para ampliar seu alcance.
                   </Typography>
                 </Box>
               </Grid>
@@ -290,7 +290,7 @@ function Services(props) {
                   <Typography
                     sx={{
                       fontSize: "2rem",
-                      //fontWeight: 700,
+                      fontWeight: 700,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.8rem" },
                     }}
@@ -312,16 +312,16 @@ function Services(props) {
                   />
                   <Typography
                     sx={{
-                      fontSize: ".8rem",
+                      fontSize: "1rem",
                       //fontWeight: 700,
                       fontFamily: "Arvo, serif",
                       textAlign: "center",
                       width: 225,
                     }}
                   >
-                    Produzimos conteúdos para diversas midias, fazemos design´s
-                    graficos estaticos e dinamicos, produzimos para midias
-                    digitais e convencionas como banner, e pafletos etc...
+                    Produzimos conteúdos para diversas mídias, criando designs
+                    gráficos estáticos e dinâmicos para plataformas digitais e
+                    materiais impressos, como banners e panfletos.
                   </Typography>
                 </Box>
               </Grid>

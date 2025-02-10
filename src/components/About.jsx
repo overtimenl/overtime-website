@@ -47,7 +47,7 @@ function About() {
               textAlign: "justify",
               color: "white",
               fontFamily: "Arvo, serif",
-              fontSize: ".8rem",
+              fontSize: "1.2rem",
             }}
           >
             Na OVERTIME, estamos comprometidos em impulsionar o futuro através
@@ -59,7 +59,7 @@ function About() {
             experiências digitais envolventes. Seja para desktop, web ou mobile,
             entregamos soluções personalizadas que atendem às suas necessidades
             específicas. <br />
-            <strong>Marketing Estratégico:</strong>
+            <strong style={{ fontSize: 16 }}>Marketing Estratégico:</strong>
             <br />
             Nossa abordagem de marketing digital é focada em resultados. Desde a
             construção da presença online até campanhas eficazes, trabalhamos
@@ -67,7 +67,7 @@ function About() {
             comprometidos em oferecer inovação e excelência. Vamos colaborar
             para levar o seu negócio para o próximo nível digital.
             <br />
-            <strong>Trabalhe Conosco:</strong>
+            <strong style={{ fontSize: 16 }}>Trabalhe Conosco:</strong>
             <br />
             Na OVERTIME, não apenas construímos soluções digitais; construímos
             parcerias duradouras. Deixe-nos ser o catalisador para o sucesso
@@ -95,7 +95,7 @@ function About() {
         </Typography>
       </Box>
       <Box sx={{ display: { xs: "none", md: "flex" } }}>
-        <img src={Bitcoins} width={400} height={400} />
+        <img src={Bitcoins} width={470} height={370} />
       </Box>
     </Box>
   );
