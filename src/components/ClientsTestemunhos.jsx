@@ -127,7 +127,7 @@ function ClientsTestemunhos(props) {
 	*/
 
   return (
-    <Box sx={{}}>
+    <>
       <Box
         sx={{
           display: "flex",
@@ -270,7 +270,7 @@ function ClientsTestemunhos(props) {
           </div>
         )}
       </Box>
-    </Box>
+    </>
   );
 }
 export default ClientsTestemunhos;

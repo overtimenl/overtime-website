@@ -28,15 +28,15 @@ function App() {
             element={<Appdesktop primery={primery} secudary={secudary} />}
           />
           <Route
-            path="/SocialManager/:socket"
+            path="/SocialManager"
             element={<SocialManager primery={primery} secudary={secudary} />}
           />
           <Route
-            path="/Sellers/:socket"
+            path="/Sellers"
             element={<Sellers primery={primery} secudary={secudary} />}
           />
           <Route
-            path="/Manegerpage/:socket"
+            path="/Manegerpage"
             element={<Manegerpage primery={primery} secudary={secudary} />}
           />
         </Routes>

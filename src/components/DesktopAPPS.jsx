@@ -69,7 +69,7 @@ const sli = [
 
 function DesktopAPPS(props) {
   const { primery, secudary } = props;
-  const [slides, setSlides] = useState(sli);
+  const [slides, setSlides] = useState([]);
 
   const settings = {
     dots: true,
@@ -105,17 +105,23 @@ function DesktopAPPS(props) {
       },
     ],
   };
-  /*
-		useEffect(() => {
-	    	//setCurrentSlide(0);
-	    	fetch("http://localhost:8000/worksdb/")
-	        .then((response)=>response.json())
-	        .then((responseJson)=>{
-	           setSlides(responseJson)
-	        })  
 
-	  	}, []);
-	*/
+  useEffect(() => {
+    //setCurrentSlide(0);
+    let apps = [];
+    fetch("https://api-json-red.vercel.app/aplicativos")
+      .then((response) => response.json())
+      .then((responseJson) => {
+        responseJson.forEach((element) => {
+          if (element.work == "APP Desktop") {
+            apps.push(element);
+          }
+        });
+        setSlides(apps);
+        console.log(apps);
+      });
+  }, []);
+
   return (
     <Box>
       <Box
@@ -150,12 +156,7 @@ function DesktopAPPS(props) {
                     >
                       <Typography component={"div"} sx={{ mt: 1 }}>
                         <img
-                          src={
-                            new URL(
-                              `../assets/works/${slide.image}`,
-                              import.meta.url
-                            )
-                          }
+                          src={`https://api-json-red.vercel.app/arquivos/${slide.filename}`}
                           width={25}
                           height={20}
                         />
@@ -206,6 +207,7 @@ function DesktopAPPS(props) {
                     <CardActions>
                       <Button
                         size="small"
+                        href={`${slide.more}`}
                         sx={{
                           color: "white",
                           border: "none",

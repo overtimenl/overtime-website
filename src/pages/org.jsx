@@ -1016,11 +1016,9 @@ function Home(props) {
       <Box>
         <Publicidades />
       </Box>
-
       <Box id="service">
         <Services primery={primery} secudary={secudary} />
       </Box>
-
       <Box
         sx={{
           display: "flex",
@@ -1088,21 +1086,26 @@ function Home(props) {
         </Box>
       </Box>
       <Box
-        id="contact"
+        id="testemunho"
         sx={{
           //bgcolor: `${secudary}`,
           display: "flex",
+          //position: 'relative',
           justifyContent: "space-evenly",
           alignItems: "center",
+          //bgcolor: 'blue',
           mt: 1,
         }}
       >
         <Box
           sx={{
-            width: "90%",
+            width: "100%",
+            //height: '300px',
+            //position: 'relative',
+            //bgcolor: 'red'
           }}
         >
-          <Contact primery={primery} secudary={secudary} />
+          <ClientsTestemunhos primery={primery} secudary={secudary} />
         </Box>
       </Box>
       <Box
@@ -1123,6 +1126,26 @@ function Home(props) {
           <Emprove primery={primery} secudary={secudary} />
         </Box>
       </Box>
+
+      <Box
+        id="contact"
+        sx={{
+          //bgcolor: `${secudary}`,
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          mt: 1,
+        }}
+      >
+        <Box
+          sx={{
+            width: "90%",
+          }}
+        >
+          <Contact primery={primery} secudary={secudary} />
+        </Box>
+      </Box>
+
       <Box
         //id="sobre"
         sx={{
@@ -1130,7 +1153,7 @@ function Home(props) {
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          //mt: 1,
+          mt: 1,
         }}
       >
         <Footer primery={primery} secudary={secudary} />

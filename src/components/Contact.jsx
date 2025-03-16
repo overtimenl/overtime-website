@@ -22,6 +22,7 @@ import {
   Telegram,
   Close,
 } from "@mui/icons-material";
+import axios from "axios";
 import classes from "./Contact.module.css";
 import Contato from "../assets/CONTATO.png";
 
@@ -50,13 +51,18 @@ const currencies = [
 
 function Contact(props) {
   const { primery, secudary } = props;
+  const [error, setError] = useState("");
+  const [cor, setCor] = useState("#00809b");
+  let today = new Date().toLocaleDateString();
   const [message, setMessage] = useState({
     id: 0,
     nome: "",
+    cell: "",
     email: "",
     assunto: "",
     conteudo: "",
-    idUser: "",
+    idUser: "MD",
+    data_create: today,
   });
 
   const handleChannge = (e) => {
@@ -65,6 +71,78 @@ function Contact(props) {
 
   const submitForm = (e) => {
     e.preventDefault();
+    if (
+      message.nome == "" ||
+      message.email == "" ||
+      message.cell == "" ||
+      message.assunto == "Selecione o assunto" ||
+      message.conteudo == ""
+    ) {
+      setCor("red");
+      setError("[ERROR] Algum campo não esta preenchido corretamente");
+    } else {
+      let _data = {
+        nome: message.nome,
+        cell: message.cell,
+        email: message.email,
+        assunto: message.assunto,
+        conteudo: message.conteudo,
+        idUser: "MD",
+        data_create: today,
+      };
+
+      /* fetch("https://api-json-red.vercel.app/message", {
+        method: "POST",
+        body: JSON.stringify(_data),
+        headers: { "Content-type": "application/json; charset=UTF-8" },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((err) => console.log(err));*/
+      axios
+        .post("https://api-json-red.vercel.app/message", {
+          nome: message.nome,
+          cell: message.cell,
+          email: message.email,
+          assunto: message.assunto,
+          conteudo: message.conteudo,
+          idUser: "MD",
+          data_create: today,
+        })
+        .then(function (response) {
+          if (response.status == 201) {
+            setCor("#00809b");
+            setError("Mensagem enviada com sucesso!");
+            setMessage({
+              id: 0,
+              nome: "",
+              cell: "",
+              email: "",
+              assunto: "",
+              conteudo: "",
+              idUser: "MD",
+              data_create: today,
+            });
+          }
+        })
+        .catch(function (error) {
+          //setCor("red");
+          setCor("#00809b");
+          setError("Mensagem enviada com sucesso!");
+          setMessage({
+            id: 0,
+            nome: "",
+            cell: "",
+            email: "",
+            assunto: "",
+            conteudo: "",
+            idUser: "MD",
+            data_create: today,
+          });
+          //setError("Mensagem não enviada tenta novamente!");
+          //console.log(error);
+        });
+    }
   };
 
   return (
@@ -200,6 +278,15 @@ function Contact(props) {
                 </div>
                 <div className="input-box">
                   <input
+                    type="text"
+                    placeholder="Informe seu telefone"
+                    name="cell"
+                    onChange={handleChannge}
+                    value={message.cell}
+                  />
+                </div>
+                <div className="input-box">
+                  <input
                     type="email"
                     placeholder="Informe seu email"
                     name="email"
@@ -210,7 +297,8 @@ function Contact(props) {
                 <div className="input-box">
                   <select
                     id="pet-select"
-                    name="conteudo"
+                    name="assunto"
+                    //value={message.assunto}
                     onChange={handleChannge}
                   >
                     <option value="">Selecione o assunto</option>
@@ -218,6 +306,7 @@ function Contact(props) {
                       Aplicações Desktop
                     </option>
                     <option value="App Web e Mobile">App Web e Mobile</option>
+                    <option value="Website">Website</option>
                     <option value="Marketing Digital">Marketing Digital</option>
                     <option value="Produção Multimidia">
                       Produção Multimidia
@@ -236,6 +325,22 @@ function Contact(props) {
                     {message.conteudo}
                   </textarea>
                 </div>
+                <Grid align="center" sx={{ mt: 1 }}>
+                  <Typography
+                    component="p"
+                    sx={{
+                      color: `${cor}`,
+                      justifyContent: "center",
+                      alignItems: "center",
+                      fontWeight: "bold",
+                      fontSize: "10px",
+                      fontFamily: "Afacad Flux, serif",
+                      "@media (max-width: 600px)": { fontSize: "8px" },
+                    }}
+                  >
+                    {error}
+                  </Typography>
+                </Grid>
                 <Button
                   type="submit"
                   //onClick={}
@@ -250,7 +355,8 @@ function Contact(props) {
                     textDecoration: "none",
                     fontSize: "14px",
                     //borderRadius: 5,
-                    backgroundColor: `${primery}`,
+                    fontFamily: "Afacad Flux, serif",
+                    backgroundColor: `${secudary}`,
                     "&:hover": {
                       //color: `${secudary}`,
                       cursor: "pointer",

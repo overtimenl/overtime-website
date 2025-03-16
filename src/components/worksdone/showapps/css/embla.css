@@ -1,27 +1,88 @@
 .embla {
-  max-width: 90rem;
+  max-width: 100rem;
   margin: auto;
-  --slide-height: 14rem;
+  --slide-height: 19rem;
   --slide-spacing: 1rem;
-  --slide-size: 55%;
+  --slide-size: 100%;
+  --slide-spacing-sm: 1.6rem;
+  --slide-size-sm: 50%;
+  --slide-spacing-lg: 2rem;
+  --slide-size-lg: calc(100% / 3);
+}
+@media only screen and (max-width: 475px) {
+  .embla {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .embla {
+    max-width: 300px;
+  }
 }
 .embla__viewport {
   overflow: hidden;
-  width: 100%;
+  /*width: 100%;*/
 }
 .embla__container {
+  backface-visibility: hidden;
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
-  width: 100%;
+  /*width: 100%;*/
   height: 480px;
 }
+@media (min-width: 750px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing-sm) * -1);
+  }
+}
+@media (min-width: 1200px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing-lg) * -1);
+  }
+}
+
 .embla__slide {
-  transform: translate3d(0, 0, 0);
+  /*transform: translate3d(0, 0, 0);*/
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
+
+@media (min-width: 750px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-sm);
+    padding-left: var(--slide-spacing-sm);
+  }
+}
+@media (min-width: 1200px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-lg);
+    padding-left: var(--slide-spacing-lg);
+  }
+}
+/*
+@media only screen and (max-width: 480px) {
+  .embla {
+    max-width: 400px;
+    margin-left: -20px;
+  }
+  .embla__viewport {
+    width: 105%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .embla {
+    max-width: 350px;
+    margin-left: -55px;
+  }
+  .embla__viewport {
+    overflow: hidden;
+    width: 105%;
+  }
+}*/
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
@@ -31,7 +92,7 @@
   align-items: center;
   justify-content: center;
   height: var(--slide-height);
-  user-select: none;
+  -webkit-user-select: none;
 }
 .embla__controls {
   display: grid;
@@ -63,13 +124,13 @@
   height: 3.6rem;
   z-index: 1;
   border-radius: 50%;
-  color: #ffffff;
+  color: #686464;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .embla__button:disabled {
-  color: rgb(101, 101, 101);
+  color: rgb(255, 250, 250);
 }
 .embla__button__svg {
   width: 35%;

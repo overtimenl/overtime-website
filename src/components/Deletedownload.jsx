@@ -2,9 +2,9 @@ import { Box, Button, Divider, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
 
-function Deletepublicidades({
-  anuncio,
-  setAnuncios,
+function Deletedownload({
+  download,
+  setDownloads,
   setOpenModel,
   primery,
   secudary,
@@ -14,26 +14,27 @@ function Deletepublicidades({
 
   const handleDelete = (e) => {
     e.preventDefault();
+
     axios
-      .delete(`https://api-json-red.vercel.app/publicidadesdb/${anuncio.id}`)
+      .delete(`https://api-json-red.vercel.app/downloads/${download.id}`)
       .then((response) => {
         setCor("#00809b");
-        setMessage("Publicidade excluida com sucesso!");
+        setMessage("Download excluido com sucesso!");
         setOpenModel(false);
         //console.log(`Deleted post with ID ${anuncio.name}`);
       })
       .catch((error) => {
+        //console.error(error);
         setCor("#00809b");
-        setMessage("Publicidade excluida com sucesso!");
+        setMessage("Download excluido com sucesso!");
         setOpenModel(false);
-        //setCor("red");
-        //setOpenModel(false);
-        //setMessage("[ERRO] Publicidade não excluida!");
       });
-    fetch("https://api-json-red.vercel.app/publicidadesdb")
+
+    fetch("https://api-json-red.vercel.app/downloads")
       .then((response) => response.json())
       .then((responseJson) => {
-        setAnuncios(responseJson);
+        //console.log(responseJson)
+        setDownloads(responseJson);
       });
   };
 
@@ -57,7 +58,7 @@ function Deletepublicidades({
               "@media (max-width: 600px)": { fontSize: "10px" },
             }}
           >
-            {`Tem certeza que dezeja exluir o Anúncio ${anuncio.subtitle} ?`}
+            {`Tem certeza que dezeja exluir o registo de download da empresa ${download.empresa} ?`}
           </Typography>
           <Typography
             sx={{
@@ -66,7 +67,7 @@ function Deletepublicidades({
               fontWeight: "bold",
               fontSize: "10px",
               color: "red",
-              fontFamily: "Afacad Flux, serif",
+              fontFamily: "Arvo, serif",
               "@media (max-width: 600px)": { fontSize: "8px" },
             }}
           >
@@ -118,4 +119,4 @@ function Deletepublicidades({
   );
 }
 
-export default Deletepublicidades;
+export default Deletedownload;

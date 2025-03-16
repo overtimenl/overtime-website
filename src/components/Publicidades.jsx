@@ -58,7 +58,7 @@ const slids = [
 
 function Publicidades() {
   //const classes = useStyles();
-  const [slides, setSlides] = useState(slids);
+  const [slides, setSlides] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = slides.length;
 
@@ -79,18 +79,17 @@ function Publicidades() {
   function auto() {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
+
+  useEffect(() => {
+    setCurrentSlide(0);
+    fetch("https://api-json-red.vercel.app/publicidadesdb")
+      .then((response) => response.json())
+      .then((responseJson) => {
+        setSlides(responseJson);
+      });
+  }, []);
+
   /*
-  	useEffect(() => {
-    	setCurrentSlide(0);
-    	fetch("http://localhost:8000/publicidadesdb/")
-        .then((response)=>response.json())
-        .then((responseJson)=>{
-           setSlides(responseJson)
-        })  
-
-  	}, []);
-	
-
   	useEffect(() => {
     	if (autoScroll) {
       		auto();
@@ -125,12 +124,7 @@ function Publicidades() {
                 {index === currentSlide && (
                   <>
                     <img
-                      src={
-                        new URL(
-                          `../assets/marketing/${slide.image}`,
-                          import.meta.url
-                        )
-                      }
+                      src={`https://api-json-red.vercel.app/arquivos/${slide.filename}`}
                       alt="Slide"
                     />
                     <div className={classes.sombra}>
@@ -167,6 +161,7 @@ function Publicidades() {
                           </Button>
                         ) : (
                           <Button
+                            href={`${slide.more}`}
                             sx={{
                               mt: 0.5,
                               color: "white",

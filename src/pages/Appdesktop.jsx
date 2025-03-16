@@ -1,5 +1,5 @@
-import { useCallback, useState } from "react";
-import { Box, Grid, Typography, IconButton } from "@mui/material";
+import { useCallback, useState, useEffect } from "react";
+import { Box, Grid, Typography, IconButton, Button } from "@mui/material";
 import classes from "./descktop.module.css";
 import logo from "../assets/OverLogo.png";
 //import logo from "../assets/OverLogo.png";
@@ -14,14 +14,16 @@ import {
   WhatsApp,
   Telegram,
   Close,
+  ArrowLeft,
 } from "@mui/icons-material";
 import Boxdesktop from "../components/worksdone/Boxdesktop";
+import Model from "../components/Model";
 
 import "../components/worksdone/showapps/css/base.css";
 //import '../css/sandbox.css'
 import "../components/worksdone/showapps/css/embla.css";
 import EmblaCarousel from "../components/worksdone/showapps/js/EmblaCarousel";
-
+import { Downloadguia } from "../components/worksdone/Downloadguia";
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -111,6 +113,10 @@ const slides = [
 
 function Appdesktop(props) {
   const { primery, secudary } = props;
+  //const [opcao, setOpcao] = useState('');
+  const [servicos, setServicos] = useState([]);
+  const [openModel, setOpenModel] = useState(false);
+  const [title, setTitle] = useState("");
   const [aplication, setAplication] = useState({
     id: 1,
     titulo: "Aplicação Desktop para Gestão de Lojas",
@@ -128,10 +134,43 @@ function Appdesktop(props) {
   
     `,
   });
+
+  useEffect(() => {
+    let apps = [];
+    fetch("https://api-json-red.vercel.app/aplicativos")
+      .then((response) => response.json())
+      .then((responseJson) => {
+        responseJson.forEach((element) => {
+          if (element.work == "APP Desktop") {
+            apps.push(element);
+          }
+        });
+        setServicos(apps);
+        console.log(apps);
+      });
+  }, []);
   return (
     <>
       <div className={classes.header}>
         <div className={classes.titulo}>
+          <Button
+            size="small"
+            href="/"
+            sx={{
+              minWidth: 50,
+              minHeight: 25,
+              mt: 7,
+              mr: 1,
+              borderRadius: 100,
+              "@media (max-width: 550px)": {
+                //width: "80%",
+                mt: 5.2,
+                minWidth: 30,
+              },
+            }}
+          >
+            <ArrowLeft sx={{ fontSize: 25, color: "white" }} />
+          </Button>
           <h1>Aplicações Dasktop</h1>
         </div>
       </div>
@@ -139,21 +178,67 @@ function Appdesktop(props) {
         sx={{
           display: "flex",
           alignItems: "center",
-
+          height: "110vh",
           //flexDirection: "column",
           justifyContent: "center",
           width: "100%",
           //height: "500px", <Boxdesktop primery={primery} secudary={secudary} app={aplication} />
           //mt: 1,
           mb: 2,
+          "@media (max-width: 1050px)": {
+            width: "80%",
+            ml: 10,
+          },
+          "@media (max-width: 770px)": {
+            //width: "80%",
+            ml: 8,
+          },
+          "@media (max-width: 650px)": {
+            //width: "80%",
+            ml: 8,
+          },
+          "@media (max-width: 600px)": {
+            //width: "80%",
+            ml: 6,
+          },
+          "@media (max-width: 495px)": {
+            width: "50%",
+            ml: 15,
+          },
+          "@media (max-width: 485px)": {
+            width: "25%",
+            ml: 22,
+          },
+          "@media (max-width: 470px)": {
+            width: 5,
+            ml: 25,
+          },
+          "@media (max-width: 375px)": {
+            //width: 5,
+            ml: 23,
+          },
+          "@media (max-width: 325px)": {
+            //width: 5,
+            ml: 20,
+          },
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            //height: "100",
+          }}
+        >
           <EmblaCarousel
-            slides={slides}
+            slides={servicos}
             options={OPTIONS}
             primery={primery}
             secudary={secudary}
+            setTitle={setTitle}
+            setOpenModel={setOpenModel}
+            setAplication={setAplication}
           />
         </Box>
       </Box>
@@ -163,21 +248,25 @@ function Appdesktop(props) {
           <Box
             sx={{
               display: "flex",
-              mt: 3,
+              justifyItems: "center",
+              //alignItems: "center",
+              mt: 2,
               ml: 0.5,
+              //mb: 2,
             }}
           >
             <Typography
               component={"div"}
               //sx={{ width: 45, height: 40, display: { xs: 'none', md: 'flex' }, mr: 1 }}
             >
-              <img src={logo} width={30} height={30} />
+              <img src={logo} width={25} height={25} />
             </Typography>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                ml: 1.7,
                 //justifyContent: "center",
               }}
             >
@@ -188,8 +277,8 @@ function Appdesktop(props) {
                   fontWeight: 700,
                   fontSize: "1.5rem",
                   color: "#fff",
-                  mt: -1.7,
-                  //ml: 0.,
+                  mt: -1,
+                  ml: -2,
                   fontFamily: "Diphylleia, serif",
                   //fontFamily: 'Prosto One, sans-serif',
                   //color: `${primery}`,
@@ -205,7 +294,7 @@ function Appdesktop(props) {
                   fontSize: ".5rem",
                   color: `${secudary}`,
                   mt: -0.4,
-                  ml: 5,
+                  mr: -1,
                   "@media (max-width: 500px)": {
                     //ml: 8,
                   },
