@@ -155,6 +155,7 @@ function Publicidades() {
                                 cursor: "pointer",
                                 transition: "0.3s ease-in",
                               },
+                              "@media (max-width: 320px)": { fontSize: "10px" },
                             }}
                           >
                             Entre em contato agora mesmo!
@@ -179,6 +180,7 @@ function Publicidades() {
                                 cursor: "pointer",
                                 transition: "0.3s ease-in",
                               },
+                              "@media (max-width: 320px)": { fontSize: "10px" },
                             }}
                           >
                             Saber mais
