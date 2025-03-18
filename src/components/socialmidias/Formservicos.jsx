@@ -186,16 +186,13 @@ function Formservicos(props) {
         formData.append("filename", selectFile.current.files[0]);
 
         try {
-          const response = await fetch(
-            "https://api-json-red.vercel.app/aplicativos",
-            {
-              method: "POST",
-              Headers: headers,
-              body: formData,
-            }
-          );
+          const response = await fetch("http://localhost:3000/aplicativos", {
+            method: "POST",
+            body: formData,
+          });
 
           const data = await response.json();
+          console.log(data);
 
           if (response.ok) {
             setCor("#00809b");
@@ -215,24 +212,41 @@ function Formservicos(props) {
             });
             setSelectedImage();
             setImg("sem-foto.jpg");
-            setOpenModel(false);
-
+            //setOpenModel(false);
             fetch("https://api-json-red.vercel.app/aplicativos")
               .then((response) => response.json())
               .then((responseJson) => {
                 setWorks(responseJson);
               });
-          } else if (response.status === 400) {
-            setCor("red");
-            setMessage("[ERRO] Serviço não cadastrado!");
-          } else {
-            setCor("red");
-            setMessage("[ERRO] Serviço Invalido!");
           }
         } catch (error) {
-          setCor("red");
-          setMessage("[ERRO] Servidor indisponivel!");
+          //setCor("red");
+          //setMessage("[ERRO] Servidor indisponivel!");
         }
+        /*setCor("#00809b");
+        setMessage("Serviço cadastrado com sucesso!");
+        setServico({
+          id: 0,
+          work: "",
+          name: "",
+          image: "",
+          conteudo: "",
+          titulo: "",
+          resumo: ``,
+          link: "",
+          arquivo: "",
+          more: "",
+          whats: "",
+        });
+        setSelectedImage();
+        setImg("sem-foto.jpg");*/
+        //
+        fetch("https://api-json-red.vercel.app/aplicativos")
+          .then((response) => response.json())
+          .then((responseJson) => {
+            setWorks(responseJson);
+          });
+        //setOpenModel(false);
         /* axios({
           method: "post",
           url: "http://localhost:8000/worksdb/create",

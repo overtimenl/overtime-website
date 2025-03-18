@@ -63,16 +63,26 @@ export default function Boxdesktop(props) {
                 color: `${secudary}`,
                 fontFamily: "Afacad Flux, sans-serif",
                 mb: 0.5,
+                "@media (max-width: 320px)": { fontSize: "1.2rem" },
               }}
             >
               {app.titulo}
             </Typography>
-            <Typography variant="h7" sx={{}}>
+            <Typography
+              variant="h7"
+              sx={{
+                fontSize: "1.2rem",
+                fontFamily: "Afacad Flux, sans-serif",
+                "@media (max-width: 320px)": { fontSize: "1rem" },
+              }}
+            >
               {parse(`${app.resumo}`)}
             </Typography>
           </Box>
         </CardActionArea>
-        <Box sx={{ p: 2, mt: -4, mb: -2 }}>
+        <Box
+          sx={{ p: 2, mt: -4, mb: -2, "@media (max-width: 320px)": { p: 1 } }}
+        >
           <Button
             size="small"
             href={`${app.whats}`}
@@ -89,11 +99,13 @@ export default function Boxdesktop(props) {
                 color: `${"rgb(9, 179, 40)"}`,
                 transition: "all 400ms",
               },
+              "@media (max-width: 320px)": { minWidth: 35 },
             }}
           >
             <WhatsApp
               sx={{
                 fontSize: "25px",
+                "@media (max-width: 320px)": { fontSize: "15px" },
               }}
             />
           </Button>
@@ -113,11 +125,13 @@ export default function Boxdesktop(props) {
                 color: `${"#27B3E6"}`,
                 transition: "all 400ms",
               },
+              "@media (max-width: 320px)": { minWidth: 35 },
             }}
           >
             <Downloading
               sx={{
                 fontSize: "25px",
+                "@media (max-width: 320px)": { fontSize: "15px" },
               }}
             />
           </Button>

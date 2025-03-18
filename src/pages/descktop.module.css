@@ -106,21 +106,21 @@
 
 @media only screen and (max-width: 399px) {
   .header {
-    border-left: 370px solid #ed1c07;
+    border-left: 350px solid #ed1c07;
     border-bottom: 150px solid transparent;
   }
   .titulo {
-    margin-left: -365px;
+    margin-left: -355px;
   }
   .titulo h1 {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 44px;
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   .header {
-    border-left: 350px solid #ed1c07;
+    border-left: 300px solid #ed1c07;
     border-bottom: 150px solid transparent;
   }
   .titulo {

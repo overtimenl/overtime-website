@@ -48,13 +48,13 @@ export default function Notfications(props) {
   React.useEffect(() => {
     let tot = 0;
     let ativos = [];
-    fetch("http://localhost:3000/downloads")
+    fetch("https://api-json-red.vercel.app/downloads")
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson);
         setDownloads(responseJson);
       });
-    fetch("http://localhost:3000/message")
+    fetch("https://api-json-red.vercel.app/message")
       .then((response) => response.json())
       .then((responseJson) => {
         //console.log(responseJson)
