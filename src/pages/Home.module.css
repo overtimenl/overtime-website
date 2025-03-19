@@ -1,0 +1,15 @@
+@keyframes blink {
+  0% {
+    color: #ed1c07; /* Cor inicial */
+  }
+  50% {
+    color: #ffffff; /* Cor durante o "piscado" */
+  }
+  100% {
+    color: #ed1c07; /* Retorna à cor inicial */
+  }
+}
+
+.menu {
+  animation: blink 2s infinite; /* 1 segundo de duração e loop infinito */
+}

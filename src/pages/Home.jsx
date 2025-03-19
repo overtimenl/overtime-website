@@ -23,7 +23,7 @@ import {
   Menu,
   LinkedIn,
   LocalPhone,
-  Watch,
+  Widgets,
   WhatsApp,
   Telegram,
   Close,
@@ -38,6 +38,7 @@ import ClientsTestemunhos from "../components/ClientsTestemunhos.jsx";
 import Emprove from "../components/Emprove.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
+import classes from "./Home.module.css";
 
 function Home(props) {
   const { primery, secudary } = props;
@@ -562,17 +563,27 @@ function Home(props) {
         }}
       >
         {openMenu == "none" ? (
-          <IconButton
+          <Button
             size="large"
             edge="start"
+            elevation={1}
             //color="inherit"
+
             aria-label="menu"
-            sx={{ color: `${secudary}` }}
+            sx={{
+              mb: 0.3,
+              ml: -0.7,
+              mt: 0.6,
+              minWidth: 25,
+              borderRadius: 1,
+              bgcolor: `#353232`,
+              color: `${secudary}`,
+            }}
             //startIcon={}
             onClick={() => setOpenMenu("flex")}
           >
-            <Menu sx={{ fontSize: 25 }} />
-          </IconButton>
+            <Widgets className={classes.menu} sx={{ fontSize: 20 }} />
+          </Button>
         ) : (
           <IconButton
             size="large"
