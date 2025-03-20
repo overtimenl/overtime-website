@@ -157,21 +157,73 @@ function Appdesktop(props) {
             size="small"
             href="/"
             sx={{
-              minWidth: 50,
-              minHeight: 25,
+              minWidth: 40,
+              maxHeight: 40,
               mt: 7,
-              mr: 1,
-              borderRadius: 100,
+              mr: 2,
+              //borderRadius: 100,
+              bgcolor: `${primery}`,
               "@media (max-width: 550px)": {
                 //width: "80%",
-                mt: 5.2,
-                minWidth: 30,
+                mt: 5,
+                mr: 1,
+                //maxWidth: 30,
+                maxHeight: 40,
+                borderRadius: 100,
+              },
+              "@media (max-width: 399px)": {
+                //width: "80%",
+                mt: 5,
+                mr: 1,
+                bgcolor: `${secudary}`,
+                //maxWidth: 30,
+                maxHeight: 40,
+                borderRadius: 100,
               },
             }}
           >
-            <ArrowLeft sx={{ fontSize: 25, color: "white" }} />
+            <ArrowLeft sx={{ fontSize: 30, color: "white" }} />
           </Button>
-          <h1>Aplicações Dasktop</h1>
+          <h1>Aplicações Desktop</h1>
+          <Typography
+            sx={{
+              ml: -31,
+              mt: 10,
+              maxWidth: 300,
+              fontSize: 13,
+              //fontFamily: "Diphylleia, serif",
+              "@media (max-width: 880px)": {
+                //width: "80%",
+                mt: 8,
+                ml: -24,
+                //minWidth: 30,
+              },
+              "@media (max-width: 660px)": {
+                fontSize: 11,
+                maxWidth: 280,
+              },
+              "@media (max-width: 550px)": {
+                fontSize: 10,
+                maxWidth: 200,
+                mt: 6,
+                ml: -19,
+              },
+              "@media (max-width: 399px)": {
+                fontSize: 8,
+                maxWidth: 200,
+                mt: 7.2,
+                ml: -14.5,
+              },
+              "@media (max-width: 320px)": {
+                fontSize: 8,
+                maxWidth: 150,
+                mt: 7.2,
+                ml: -14.5,
+              },
+            }}
+          >
+            Sistemas para gestão de négocios finalizados, e prontos para uso!
+          </Typography>
         </div>
       </div>
       <Box
