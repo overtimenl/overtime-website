@@ -165,8 +165,9 @@ function Appdesktop(props) {
               bgcolor: `${primery}`,
               "@media (max-width: 550px)": {
                 //width: "80%",
-                mt: 5,
+                mt: 4,
                 mr: 1,
+                ml: -1,
                 //maxWidth: 30,
                 maxHeight: 40,
                 borderRadius: 100,
@@ -203,8 +204,8 @@ function Appdesktop(props) {
                 maxWidth: 280,
               },
               "@media (max-width: 550px)": {
-                fontSize: 10,
-                maxWidth: 200,
+                fontSize: 9.5,
+                maxWidth: 180,
                 mt: 6,
                 ml: -19,
               },
