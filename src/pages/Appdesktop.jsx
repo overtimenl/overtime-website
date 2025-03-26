@@ -157,25 +157,20 @@ function Appdesktop(props) {
             size="small"
             href="/"
             sx={{
-              minWidth: 40,
+              maxWidth: 40,
               maxHeight: 40,
-              mt: 7,
+              mt: 0.5,
               mr: 2,
               //borderRadius: 100,
               bgcolor: `${primery}`,
               "@media (max-width: 550px)": {
-                //width: "80%",
-                mt: 4,
-                mr: 1,
-                ml: -1,
-                //maxWidth: 30,
                 maxHeight: 40,
                 borderRadius: 100,
               },
               "@media (max-width: 399px)": {
                 //width: "80%",
-                mt: 5,
-                mr: 1,
+                //mt: 5,
+                ml: -2,
                 bgcolor: `${secudary}`,
                 //maxWidth: 30,
                 maxHeight: 40,
@@ -188,17 +183,11 @@ function Appdesktop(props) {
           <h1>Aplicações Desktop</h1>
           <Typography
             sx={{
-              ml: -31,
-              mt: 10,
+              ml: -0.5,
+              mt: -1,
               maxWidth: 300,
               fontSize: 13,
               //fontFamily: "Diphylleia, serif",
-              "@media (max-width: 880px)": {
-                //width: "80%",
-                mt: 8,
-                ml: -24,
-                //minWidth: 30,
-              },
               "@media (max-width: 660px)": {
                 fontSize: 11,
                 maxWidth: 280,
@@ -206,20 +195,20 @@ function Appdesktop(props) {
               "@media (max-width: 550px)": {
                 fontSize: 9.5,
                 maxWidth: 180,
-                mt: 6,
-                ml: -19,
+                //mt: 6,
+                //ml: -19,
               },
               "@media (max-width: 399px)": {
                 fontSize: 8,
                 maxWidth: 200,
-                mt: 7.2,
-                ml: -14.5,
+                mt: -0.1,
+                //ml: -14.5,
               },
               "@media (max-width: 320px)": {
                 fontSize: 8,
                 maxWidth: 150,
-                mt: 7.2,
-                ml: -14.5,
+                mt: -0.1,
+                ml: -0.1,
               },
             }}
           >

@@ -81,36 +81,17 @@ function Contact(props) {
       setCor("red");
       setError("[ERROR] Algum campo não esta preenchido corretamente");
     } else {
-      let _data = {
-        nome: message.nome,
-        cell: message.cell,
-        email: message.email,
-        assunto: message.assunto,
-        conteudo: message.conteudo,
-        idUser: "MD",
-        data_create: today,
-      };
-
-      /* fetch("https://api-json-red.vercel.app/message", {
-        method: "POST",
-        body: JSON.stringify(_data),
-        headers: { "Content-type": "application/json; charset=UTF-8" },
-      })
-        .then((response) => response.json())
-        .then((json) => console.log(json))
-        .catch((err) => console.log(err));*/
       axios
-        .post("https://api-json-red.vercel.app/message", {
+        .post("http://localhost:3000/api/message", {
           nome: message.nome,
           cell: message.cell,
           email: message.email,
           assunto: message.assunto,
           conteudo: message.conteudo,
-          idUser: "MD",
-          data_create: today,
+          idUser: "MsdswdsD",
         })
         .then(function (response) {
-          if (response.status == 201) {
+          if (response.status === 201) {
             setCor("#00809b");
             setError("Mensagem enviada com sucesso!");
             setMessage({
@@ -118,28 +99,15 @@ function Contact(props) {
               nome: "",
               cell: "",
               email: "",
-              assunto: "",
+              assunto: "Selecione o assunto",
               conteudo: "",
               idUser: "MD",
-              data_create: today,
             });
           }
         })
         .catch(function (error) {
-          //setCor("red");
-          setCor("#00809b");
-          setError("Mensagem enviada com sucesso!");
-          setMessage({
-            id: 0,
-            nome: "",
-            cell: "",
-            email: "",
-            assunto: "",
-            conteudo: "",
-            idUser: "MD",
-            data_create: today,
-          });
-          //setError("Mensagem não enviada tenta novamente!");
+          setCor("red");
+          setError(`[ERRO] Mensagem não enviada: ${error}`);
           //console.log(error);
         });
     }
