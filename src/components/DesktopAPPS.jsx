@@ -108,6 +108,7 @@ function DesktopAPPS(props) {
 
   useEffect(() => {
     //setCurrentSlide(0);
+    // https://api-json-red.vercel.app /
     let apps = [];
     fetch("https://api-json-red.vercel.app/aplicativos")
       .then((response) => response.json())

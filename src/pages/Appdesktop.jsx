@@ -137,6 +137,7 @@ function Appdesktop(props) {
 
   useEffect(() => {
     let apps = [];
+    // https://api-json-red.vercel.app/ 
     fetch("https://api-json-red.vercel.app/aplicativos")
       .then((response) => response.json())
       .then((responseJson) => {

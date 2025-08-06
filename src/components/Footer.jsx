@@ -29,7 +29,7 @@ function Footer(props) {
             component={"div"}
             //sx={{ width: 45, height: 40, display: { xs: 'none', md: 'flex' }, mr: 1 }}
           >
-            <img src={logo} width={45} height={45} />
+            <img src={logo} width={25} height={25} />
           </Typography>
           <Box
             sx={{
@@ -43,10 +43,10 @@ function Footer(props) {
               component={"div"}
               sx={{
                 fontWeight: 700,
-                fontSize: "2.2rem",
+                fontSize: "2rem",
                 color: "#fff",
                 mt: -2,
-                ml: -0.5,
+                ml: 0.1,
                 fontFamily: "Diphylleia, serif",
                 //fontFamily: 'Prosto One, sans-serif',
                 //color: `${primery}`,
@@ -59,11 +59,11 @@ function Footer(props) {
               component={"div"}
               sx={{
                 //fontWeight: 700,
-                fontSize: ".6rem",
+                fontSize: ".7rem",
                 color: `${secudary}`,
                 ml: 5.5,
                 "@media (max-width: 500px)": {
-                  ml: 8,
+                  ml: 4,
                 },
               }}
             >

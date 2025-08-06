@@ -27,7 +27,7 @@ function Emprove(props) {
           sx={{
             fontSize: "1.5rem",
             fontWeight: 700,
-            color: "#fff",
+            color: `${primery}`,
             //fontFamily: 'A, serif',
             "@media (max-width: 800px)": { fontSize: "1.2rem" },
           }}
@@ -38,7 +38,7 @@ function Emprove(props) {
           sx={{
             fontSize: "2.5rem",
             fontWeight: 700,
-            color: "#fff",
+            color: `${primery}`,
             fontFamily: "Afacad Flux, serif",
             "@media (max-width: 800px)": { fontSize: "1.8rem" },
             "@media (max-width: 400px)": { fontSize: "1.4rem" },
@@ -52,7 +52,7 @@ function Emprove(props) {
             mt: 2,
             fontSize: 15,
             width: 120,
-            border: `2px solid #BDC1C9`,
+            border: `1px solid #BDC1C9`,
           }}
         />
       </Box>
@@ -82,19 +82,29 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                    "@media (max-width: 450px)": { 
+                      p: 1,
+                      border: `1px solid rgb(255, 255, 255)`,
+                     borderRadius: "5%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                   }}
                 >
                   <Box
                     sx={{
-                      color: "white",
+                      color: `${secudary}`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      border: `2px solid #fff`,
+                      //border: `2px solid ${secudary}`,
                       height: 180,
                       width: 180,
-                      borderRadius: "50%",
-                      mb: 2,
+                      //borderRadius: "50%",
+                      mb: .5,
+                      "@media (max-width: 450px)": { 
+                        height: 140,
+                        width: 140,
+                      },
                     }}
                   >
                     <Typography
@@ -109,9 +119,10 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
+                      mb: 1,
                       fontSize: "2rem",
                       fontWeight: 700,
-                      color: "#fff",
+                      color: `${secudary}`,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.5rem" },
                     }}
@@ -128,19 +139,29 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                    "@media (max-width: 450px)": { 
+                      p: 1,
+                      border: `1px solid rgb(255, 255, 255)`,
+                      borderRadius: "5%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                   }}
                 >
                   <Box
                     sx={{
-                      color: "white",
+                      color: `${secudary}`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      border: `2px solid #fff`,
+                      //border: `2px solid #fff`,
                       height: 180,
                       width: 180,
-                      borderRadius: "50%",
-                      mb: 2,
+                     // borderRadius: "50%",
+                      mb: .5,
+                      "@media (max-width: 450px)": { 
+                        height: 140,
+                        width: 140,
+                      },
                     }}
                   >
                     <Typography
@@ -155,9 +176,10 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
+                      mb: 1,
                       fontSize: "2rem",
                       fontWeight: 700,
-                      color: "#fff",
+                      color: `${secudary}`,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.5rem" },
                     }}
@@ -174,19 +196,29 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                     "@media (max-width: 450px)": { 
+                      p: 1,
+                      border: `1px solid rgb(255, 255, 255)`,
+                      borderRadius: "5%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                   }}
                 >
                   <Box
                     sx={{
-                      color: "white",
+                      color: `${secudary}`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      border: `2px solid #fff`,
+                      //border: `2px solid #fff`,
                       height: 180,
                       width: 180,
-                      borderRadius: "50%",
-                      mb: 2,
+                     // borderRadius: "50%",
+                      mb: .5,
+                      "@media (max-width: 450px)": { 
+                        height: 140,
+                        width: 140,
+                      },
                     }}
                   >
                     <Typography
@@ -201,9 +233,10 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
+                      mb: 1,
                       fontSize: "2rem",
                       fontWeight: 700,
-                      color: "#fff",
+                      color: `${secudary}`,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.5rem" },
                     }}
@@ -221,19 +254,29 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                     "@media (max-width: 450px)": { 
+                      p: 1,
+                      border: `1px solid rgb(255, 255, 255)`,
+                      borderRadius: "5%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                   }}
                 >
                   <Box
                     sx={{
-                      color: "white",
+                      color: `${secudary}`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      border: `2px solid #fff`,
+                      //border: `2px solid #fff`,
                       height: 180,
                       width: 180,
-                      borderRadius: "50%",
-                      mb: 2,
+                      //borderRadius: "50%",
+                      mb: .5,
+                      "@media (max-width: 450px)": { 
+                        height: 140,
+                        width: 140,
+                      },
                     }}
                   >
                     <Typography
@@ -248,9 +291,10 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
+                      mb: 1,
                       fontSize: "2rem",
                       fontWeight: 700,
-                      color: "#fff",
+                      color: `${secudary}`,
                       fontFamily: "Afacad Flux, serif",
                       "@media (max-width: 800px)": { fontSize: "1.3rem" },
                     }}

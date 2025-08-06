@@ -34,7 +34,7 @@ function Login(props) {
       .catch((err) => console.error(err));
     */
     axios
-      .get(`https://api-json-red.vercel.app/users?email=${user.email}`)
+      .get(`http://localhost:3000/users?email=${user.email}`)
       .then((response) => {
         console.log(response.data);
         if (response.data.length > 0) {

@@ -82,6 +82,7 @@ function Publicidades() {
 
   useEffect(() => {
     setCurrentSlide(0);
+    //https://api-json-red.vercel.app
     fetch("https://api-json-red.vercel.app/publicidadesdb")
       .then((response) => response.json())
       .then((responseJson) => {

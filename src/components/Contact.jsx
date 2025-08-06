@@ -82,7 +82,7 @@ function Contact(props) {
       setError("[ERROR] Algum campo não esta preenchido corretamente");
     } else {
       axios
-        .post("http://localhost:3000/api/message", {
+        .post("https://api-json-red.vercel.app/message", {
           nome: message.nome,
           cell: message.cell,
           email: message.email,

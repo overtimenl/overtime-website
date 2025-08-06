@@ -574,9 +574,9 @@ function Home(props) {
               mb: 0.3,
               ml: -0.7,
               mt: 0.6,
-              minWidth: 25,
+              minWidth: 20,
               borderRadius: 1,
-              bgcolor: `#353232`,
+              bgcolor: `none`,
               color: `${secudary}`,
             }}
             //startIcon={}
@@ -1050,7 +1050,8 @@ function Home(props) {
             cursor: "pointer",
             textDecoration: "none",
             fontWeight: "bold",
-            borderRadius: "40px 40px 40px 40px",
+            borderRadius: 2,
+            boxShadow: "4px 4px 2px lightblue",
             fontSize: "12px",
             backgroundColor: "#ED1C07",
             "&:hover": {
@@ -1119,7 +1120,7 @@ function Home(props) {
       <Box
         id=""
         sx={{
-          bgcolor: `${secudary}`,
+          //bgcolor: `${secudary}`,
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
