@@ -85,7 +85,7 @@ function Emprove(props) {
                     "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
-                     borderRadius: "5%",
+                     borderRadius: "60%",
                       boxShadow: `3px 3px 2px ${secudary}`,
                     },
                   }}
@@ -142,7 +142,7 @@ function Emprove(props) {
                     "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
-                      borderRadius: "5%",
+                      borderRadius: "60%",
                       boxShadow: `3px 3px 2px ${secudary}`,
                     },
                   }}
@@ -199,7 +199,7 @@ function Emprove(props) {
                      "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
-                      borderRadius: "5%",
+                      borderRadius: "60%",
                       boxShadow: `3px 3px 2px ${secudary}`,
                     },
                   }}
@@ -257,7 +257,7 @@ function Emprove(props) {
                      "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
-                      borderRadius: "5%",
+                      borderRadius: "60%",
                       boxShadow: `3px 3px 2px ${secudary}`,
                     },
                   }}
