@@ -62,18 +62,30 @@ function Emprove(props) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          mt: 2,
-          mb: 10,
+          // justifyContent: "center",
+          flexDirection: "column",
+          bgcolor: `${secudary}`,
+          mt: 2, mb: 1, p:1 ,
+          "@media (max-width: 600px)": {
+            bgcolor: `white`,
+           },
           "@media (max-width: 800px)": {
+            //bgcolor: `white`,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           },
         }}
       >
-        <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+        <Box 
+          sx={{
+            ml: 5,
+            mb: 3
+          }}
+        >
+            <Grid sx={{ flexGrow: 1 }} container spacing={2}>
           <Grid item xs={12}>
-            <Grid container justifyContent="space-between" spacing={2}>
+            <Grid container justifyContent="center" spacing={1}>
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <Box
                   sx={{
@@ -81,26 +93,38 @@ function Emprove(props) {
                     justifyContent: "center",
                     flexDirection: "column",
                     alignItems: "center",
+                    height: 250,
+                    width: 250,
+                    border: `1px solid rgb(255, 255, 255)`,
+                    borderRadius: "60%",
+                    boxShadow: `3px 3px 2px rgb(255, 255, 255)`,
                     mt: 5,
+                    "@media (max-width: 600px)": { 
+                      p: 1,
+                      border: `1px solid ${secudary}`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                     "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
-                     borderRadius: "60%",
+                      borderRadius: "60%",
                       boxShadow: `3px 3px 2px ${secudary}`,
                     },
                   }}
                 >
                   <Box
                     sx={{
-                      color: `${secudary}`,
+                      color: `white`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      //border: `2px solid ${secudary}`,
+                      //border: `2px solid white`,
                       height: 180,
                       width: 180,
                       //borderRadius: "50%",
                       mb: .5,
+                      // "@media (max-width: 8000px)": { },
                       "@media (max-width: 450px)": { 
                         height: 140,
                         width: 140,
@@ -112,6 +136,8 @@ function Emprove(props) {
                         fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
+                        "@media (max-width: 800px)": { color: `white`, },
+                        "@media (max-width: 600px)": { color: `${secudary}`, },
                       }}
                     >
                       15
@@ -120,11 +146,12 @@ function Emprove(props) {
                   <Typography
                     sx={{
                       mb: 1,
-                      fontSize: "2rem",
+                      fontSize: "1.7rem",
                       fontWeight: 700,
-                      color: `${secudary}`,
-                      fontFamily: "Afacad Flux, serif",
-                      "@media (max-width: 800px)": { fontSize: "1.5rem" },
+                      color: `white`,
+                      fontFamily: "Afacad Flux, serif",                
+                      "@media (max-width: 800px)": { fontSize: "1.5rem",  color: `white`, },
+                      "@media (max-width: 600px)": { color: `${secudary}`, },
                     }}
                   >
                     Clientes
@@ -139,6 +166,17 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                    height: 250,
+                    width: 250,
+                    border: `1px solid rgb(255, 255, 255)`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px rgb(255, 255, 255)`,
+                    "@media (max-width: 600px)": { 
+                      p: 1,
+                      border: `1px solid ${secudary}`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                     "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
@@ -149,7 +187,7 @@ function Emprove(props) {
                 >
                   <Box
                     sx={{
-                      color: `${secudary}`,
+                      color: `white`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -168,7 +206,9 @@ function Emprove(props) {
                       sx={{
                         fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
-                        textAlign: "center",
+                        textAlign: "center",                       
+                        "@media (max-width: 800px)": { color: `white`, },
+                        "@media (max-width: 600px)": { color: `${secudary}`, },
                       }}
                     >
                       07
@@ -177,11 +217,12 @@ function Emprove(props) {
                   <Typography
                     sx={{
                       mb: 1,
-                      fontSize: "2rem",
+                      fontSize: "1.7rem",
                       fontWeight: 700,
-                      color: `${secudary}`,
-                      fontFamily: "Afacad Flux, serif",
-                      "@media (max-width: 800px)": { fontSize: "1.5rem" },
+                      color: `white`,
+                      fontFamily: "Afacad Flux, serif",                      
+                      "@media (max-width: 800px)": { fontSize: "1.5rem", color: `white` },
+                      "@media (max-width: 600px)": { color: `${secudary}`, },
                     }}
                   >
                     Aplicações Desktop
@@ -196,7 +237,18 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
-                     "@media (max-width: 450px)": { 
+                    height: 250,
+                    width: 250,
+                    border: `1px solid rgb(255, 255, 255)`,
+                    borderRadius: "60%",
+                    boxShadow: `3px 3px 2px rgb(255, 255, 255)`,
+                    "@media (max-width: 600px)": { 
+                      p: 1,
+                      border: `1px solid ${secudary}`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
+                    "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
                       borderRadius: "60%",
@@ -206,7 +258,7 @@ function Emprove(props) {
                 >
                   <Box
                     sx={{
-                      color: `${secudary}`,
+                      color: `white`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -226,6 +278,8 @@ function Emprove(props) {
                         fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
                         textAlign: "center",
+                        "@media (max-width: 800px)": { color: `white`, },
+                        "@media (max-width: 600px)": { color: `${secudary}`, },
                       }}
                     >
                       10
@@ -236,9 +290,10 @@ function Emprove(props) {
                       mb: 1,
                       fontSize: "2rem",
                       fontWeight: 700,
-                      color: `${secudary}`,
-                      fontFamily: "Afacad Flux, serif",
-                      "@media (max-width: 800px)": { fontSize: "1.5rem" },
+                      color: `white`,
+                      fontFamily: "Afacad Flux, serif",                      
+                      "@media (max-width: 800px)": { fontSize: "1.5rem", color: `white` },
+                      "@media (max-width: 600px)": { color: `${secudary}`, },
                     }}
                   >
                     App Web e Mobile
@@ -254,6 +309,17 @@ function Emprove(props) {
                     flexDirection: "column",
                     alignItems: "center",
                     mt: 5,
+                    height: 250,
+                    width: 250,
+                    border: `1px solid rgb(255, 255, 255)`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px rgb(255, 255, 255)`,
+                      "@media (max-width: 600px)": { 
+                      p: 1,
+                      border: `1px solid ${secudary}`,
+                      borderRadius: "60%",
+                      boxShadow: `3px 3px 2px ${secudary}`,
+                    },
                      "@media (max-width: 450px)": { 
                       p: 1,
                       border: `1px solid rgb(255, 255, 255)`,
@@ -264,7 +330,7 @@ function Emprove(props) {
                 >
                   <Box
                     sx={{
-                      color: `${secudary}`,
+                      color: `white`,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
@@ -283,7 +349,9 @@ function Emprove(props) {
                       sx={{
                         fontSize: "5rem",
                         fontFamily: "Tiro Tamil, serif",
-                        textAlign: "center",
+                        textAlign: "center",                        
+                        "@media (max-width: 800px)": { color: `white`, },
+                        "@media (max-width: 600px)": { color: `${secudary}`, },
                       }}
                     >
                       10
@@ -292,11 +360,12 @@ function Emprove(props) {
                   <Typography
                     sx={{
                       mb: 1,
-                      fontSize: "2rem",
+                      fontSize: "1.7rem",
                       fontWeight: 700,
-                      color: `${secudary}`,
-                      fontFamily: "Afacad Flux, serif",
-                      "@media (max-width: 800px)": { fontSize: "1.3rem" },
+                      color: `white`,
+                      fontFamily: "Afacad Flux, serif",                     
+                      "@media (max-width: 800px)": { fontSize: "1.3rem", color: `white` },
+                      "@media (max-width: 600px)": { color: `${secudary}`, },
                     }}
                   >
                     Produção Multimidia
@@ -306,6 +375,8 @@ function Emprove(props) {
             </Grid>
           </Grid>
         </Grid>
+        </Box>
+        
       </Box>
     </>
   );
