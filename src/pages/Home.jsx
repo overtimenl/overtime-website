@@ -5,36 +5,33 @@ import {
   Divider,
   Box,
   Button,
-  Grid,
-  Tab,
-  Tabs,
-  Toolbar,
+
   Typography,
   Link,
-  Drawer,
+
   IconButton,
-  Paper,
+
 } from "@mui/material";
 import Container from "@mui/material/Container";
 import {
   Facebook,
   Twitter,
   Instagram,
-  Menu,
   LinkedIn,
   LocalPhone,
   Widgets,
   WhatsApp,
   Telegram,
   Close,
-  Person,
+  Person
 } from "@mui/icons-material";
+import Fab from '@mui/material/Fab';
 import logo from "../assets/OverLogo.png";
 import Publicidades from "../components/Publicidades.jsx";
 import Services from "../components/Services.jsx";
 import WorksDone from "../components/WorksDone.jsx";
 import About from "../components/About.jsx";
-import ClientsTestemunhos from "../components/ClientsTestemunhos.jsx";
+//import ClientsTestemunhos from "../components/ClientsTestemunhos.jsx";
 import Emprove from "../components/Emprove.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
@@ -1135,6 +1132,42 @@ function Home(props) {
           <Emprove primery={primery} secudary={secudary} />
         </Box>
       </Box>
+       <Box
+          sx={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+          }}
+        >
+
+        <Fab 
+            href="https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0"
+            sx = {{
+              bgcolor: "green",
+              p: 2,
+              width: 60,
+              height: 60,
+              "&:hover": {
+                  bgcolor: `${secudary}`,
+                  cursor: "pointer",
+                  transition: "0.3s ease-in",
+              },
+
+            }}
+        >
+          <WhatsApp sx={{ 
+              fontSize: 30,
+              color: "white",
+              "&:hover": {
+                  fontSize: 35,
+                  //color: "green",
+                  transition: "0.3s ease-in",
+              }
+
+            }} />
+        </Fab>
+      </Box>
+      
       <Box
         //id="sobre"
         sx={{

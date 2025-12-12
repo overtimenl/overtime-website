@@ -9,14 +9,14 @@ const slids = [
   {
     id: 1,
     title: "WEB SITE",
-    subtitle: "PROMOÇÃO, COMEÇA 2025 GANHANDO MAIS...",
+    subtitle: "PROMOÇÃO, COMEÇA 2026 GANHANDO MAIS...",
     tipo: "SERVICO",
     descricao: `
         <h3>Site personalizado com benefícios únicos!</h2>
 
         <p> Hospedagem e domínio <strong>GRÁTIS</strong> no primeiro ano.</p>
         <p> 6 meses de assistência técnica e consultoria em Marketing Digital.</p>
-        <p><strong> Apenas 400 mil kz, pagamento em 4 parcelas suaves,</strong> e a última só é paga quando 
+        <p><strong> Apenas 259 mil kz, pagamento em 4 parcelas suaves,</strong> e a última só é paga quando 
         seu site estiver pronto e funcionando! </p>
         
         <h5>Invista hoje e faça seu negócio crescer online!"</h5>
