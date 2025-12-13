@@ -30,8 +30,12 @@ const slids = [
     subtitle: "Cuidamos Da Sua Presença Digital",
     tipo: "SERVICO",
     descricao:
-      "Transforme engajamento em vendas! Otimize suas redes sociais com mais interações e anúncios online eficientes que convertem. Quer crescer de verdade?",
-    image: "95b91ce2-9467-40e6-8709-d328a665bf43.jpg",
+      `<h3>🚀 Transforme engajamento em vendas reais!</h3>
+      <p>📱 Otimize suas redes sociais com <strong>mais interações, conteúdos estratégicos</strong> e presença profissional.</p>
+      <p>🎯 Utilize <strong>anúncios online eficientes</strong>, criados para alcançar o público certo e gerar conversões.</p>
+      <p><strong>Quer crescer de verdade no digital?</strong> Nós ajudamos o seu negócio a vender mais.</p>
+      `,
+    image: "Marketing.png",
     more: "https://api.whatsapp.com/message/REGZSZIRC3CGI1?autoload=1&app_absent=0",
   },
   {
