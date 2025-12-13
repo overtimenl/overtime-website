@@ -19,7 +19,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.582);
   position: absolute;
 }
 .myslider {
@@ -46,7 +46,7 @@
   opacity: 0;
   padding: 1rem;
   border-radius: 2px 2px 2px 2px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.76);
   animation: slide-up 1s ease 0.5s;
   animation-fill-mode: forwards;
   visibility: hidden;
@@ -157,10 +157,10 @@
     font-size: 15px;
   }
   .content h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .content h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .content p {
     font-size: 12px;
@@ -187,10 +187,10 @@
     font-weight: 600;
   }
   .content h3 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
   }
   .content p {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
