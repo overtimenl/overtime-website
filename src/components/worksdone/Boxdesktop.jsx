@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import Box from "@mui/material/Box";
+import IconButton from '@mui/material/IconButton';
 import parse from "html-react-parser";
 import { Downloading, WhatsApp } from "@mui/icons-material";
 import Downloadguia from "./Downloadguia";
@@ -83,17 +84,18 @@ export default function Boxdesktop(props) {
         <Box
           sx={{ p: 2, mt: -4, mb: -2, "@media (max-width: 320px)": { p: 1 } }}
         >
-          <Button
+          <IconButton
             size="small"
             href={`${app.whats}`}
             target="_blank"
             sx={{
               bgcolor: "rgb(12, 109, 5)",
               //color: `${"white"}`,
-              borderRadius: 1,
+              //borderRadius: 1,
               color: "white",
               mr: 1,
-              minWidth: 50,
+              minWidth: 35,
+              minHeight: 35,
               "&:hover": {
                 cursor: "pointer",
                 color: `${"rgb(9, 179, 40)"}`,
@@ -104,21 +106,23 @@ export default function Boxdesktop(props) {
           >
             <WhatsApp
               sx={{
-                fontSize: "25px",
-                "@media (max-width: 320px)": { fontSize: "15px" },
+                fontSize: "15px",
+                "@media (max-width: 320px)": { fontSize: "10px" },
               }}
             />
-          </Button>
-          <Button
+          </IconButton>
+          <IconButton
             onClick={downGuia}
             //href={`http://localhost:3000/arquivos/${app.arquivo}`}
             //Download={`${app.arquivo}`}
             size="small"
             sx={{
               bgcolor: "blue",
-              borderRadius: 1,
+              //borderRadius: 1,
               //bgcolor: `${secudary}`,
-              minWidth: 50,
+              //minWidth: 50,
+              minWidth: 35,
+              minHeight: 35,
               color: "white",
               "&:hover": {
                 cursor: "pointer",
@@ -130,11 +134,11 @@ export default function Boxdesktop(props) {
           >
             <Downloading
               sx={{
-                fontSize: "25px",
-                "@media (max-width: 320px)": { fontSize: "15px" },
+                fontSize: "15px",
+                "@media (max-width: 320px)": { fontSize: "10px" },
               }}
             />
-          </Button>
+          </IconButton>
         </Box>
       </Card>
       <Model title={title} openModel={openModel} setOpenModel={setOpenModel}>

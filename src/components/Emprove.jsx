@@ -83,10 +83,15 @@ function Emprove(props) {
             "@media (max-width: 768px)": {
               ml: "12%"
             },
+            "@media (max-width: 595px)": {
+              ml: "32%"
+            },
             "@media (max-width: 425px)": {
               ml: "20%"
             },
-            
+            "@media (max-width: 320px)": {
+              ml: "15%"
+            },
           }}
         >
           <Grid sx={{ flexGrow: 1 }} container spacing={2}>

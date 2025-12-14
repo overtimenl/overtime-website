@@ -1,5 +1,5 @@
 import { useCallback, useState, useEffect } from "react";
-import { Box, Grid, Typography, IconButton, Button } from "@mui/material";
+import { Box, Grid, Typography, IconButton } from "@mui/material";
 import classes from "./descktop.module.css";
 import logo from "../assets/OverLogo.png";
 //import logo from "../assets/OverLogo.png";
@@ -154,7 +154,7 @@ function Appdesktop(props) {
     <>
       <div className={classes.header}>
         <div className={classes.titulo}>
-          <Button
+          <IconButton
             size="small"
             href="/"
             sx={{
@@ -165,22 +165,23 @@ function Appdesktop(props) {
               //borderRadius: 100,
               bgcolor: `${primery}`,
               "@media (max-width: 550px)": {
-                maxHeight: 40,
-                borderRadius: 100,
+                maxHeight: 35,
+                maxWidth: 35,
+                //borderRadius: 100,
               },
               "@media (max-width: 399px)": {
                 //width: "80%",
-                //mt: 5,
-                ml: -2,
+                mt: 1.5,
+                ml: -.5,
                 bgcolor: `${secudary}`,
-                //maxWidth: 30,
-                maxHeight: 40,
-                borderRadius: 100,
+                maxWidth: 25,
+                maxHeight: 25,
+                //borderRadius: 100,
               },
             }}
           >
             <ArrowLeft sx={{ fontSize: 30, color: "white" }} />
-          </Button>
+          </IconButton>
           <h1>Aplicações Desktop</h1>
           <Typography
             sx={{
