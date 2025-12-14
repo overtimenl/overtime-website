@@ -64,6 +64,7 @@ function Emprove(props) {
           alignItems: "center",
           bgcolor: `${secudary}`,
           mt: 2, mb: 1, p:1 ,
+         
           "@media (max-width: 600px)": {
             bgcolor: `white`,
            },
@@ -78,7 +79,14 @@ function Emprove(props) {
         <Box 
           sx={{
             ml: 5,
-            mb: 3
+            mb: 3,
+            "@media (max-width: 768px)": {
+              ml: "12%"
+            },
+            "@media (max-width: 425px)": {
+              ml: "20%"
+            },
+            
           }}
         >
           <Grid sx={{ flexGrow: 1 }} container spacing={2}>
@@ -195,8 +203,8 @@ function Emprove(props) {
                      // borderRadius: "50%",
                       mb: .5,
                       "@media (max-width: 450px)": { 
-                        height: 140,
-                        width: 140,
+                        height: 35,
+                        width: 120,
                       },
                     }}
                   >
@@ -266,8 +274,8 @@ function Emprove(props) {
                      // borderRadius: "50%",
                       mb: .5,
                       "@media (max-width: 450px)": { 
-                        height: 140,
-                        width: 140,
+                        height: 35,
+                        width: 120,
                       },
                     }}
                   >
@@ -338,8 +346,8 @@ function Emprove(props) {
                       //borderRadius: "50%",
                       mb: .5,
                       "@media (max-width: 450px)": { 
-                        height: 140,
-                        width: 140,
+                        height: 35,
+                        width: 120,
                       },
                     }}
                   >
