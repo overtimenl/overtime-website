@@ -25,17 +25,13 @@ function Footer(props) {
             ml: 0.5,
           }}
         >
-          <Typography
-            component={"div"}
-            //sx={{ width: 45, height: 40, display: { xs: 'none', md: 'flex' }, mr: 1 }}
-          >
-            <img src={logo} width={25} height={25} />
-          </Typography>
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
               justifyItem: "center",
+              justifyContent: "center",
+              textAlign:"center"
             }}
           >
             <Typography
@@ -46,7 +42,7 @@ function Footer(props) {
                 fontSize: "2rem",
                 color: "#fff",
                 mt: -2,
-                ml: 0.1,
+                //ml: 0.1,
                 fontFamily: "Diphylleia, serif",
                 //fontFamily: 'Prosto One, sans-serif',
                 //color: `${primery}`,
@@ -59,11 +55,11 @@ function Footer(props) {
               component={"div"}
               sx={{
                 //fontWeight: 700,
-                fontSize: ".7rem",
+                fontSize: "1.6rem",
                 color: `${secudary}`,
-                ml: 5.5,
+                //ml: 5.5,
                 "@media (max-width: 500px)": {
-                  ml: 4,
+                  //ml: 4,
                 },
               }}
             >

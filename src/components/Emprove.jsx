@@ -62,8 +62,6 @@ function Emprove(props) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          // justifyContent: "center",
-          flexDirection: "column",
           bgcolor: `${secudary}`,
           mt: 2, mb: 1, p:1 ,
           "@media (max-width: 600px)": {
@@ -83,9 +81,9 @@ function Emprove(props) {
             mb: 3
           }}
         >
-            <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+          <Grid sx={{ flexGrow: 1 }} container spacing={2}>
           <Grid item xs={12}>
-            <Grid container justifyContent="center" spacing={1}>
+            <Grid container justifyContent="space-between" spacing={2}>
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <Box
                   sx={{
@@ -126,8 +124,8 @@ function Emprove(props) {
                       mb: .5,
                       // "@media (max-width: 8000px)": { },
                       "@media (max-width: 450px)": { 
-                        height: 140,
-                        width: 140,
+                        height: 35,
+                        width: 120,
                       },
                     }}
                   >
@@ -145,7 +143,7 @@ function Emprove(props) {
                   </Box>
                   <Typography
                     sx={{
-                      mb: 1,
+                      mb: .5,
                       fontSize: "1.7rem",
                       fontWeight: 400,
                       color: `white`,

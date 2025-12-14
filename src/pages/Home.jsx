@@ -1047,9 +1047,9 @@ function Home(props) {
             cursor: "pointer",
             textDecoration: "none",
             fontWeight: "bold",
-            borderRadius: 2,
+            borderRadius: "1%",
             boxShadow: "4px 4px 2px lightblue",
-            fontSize: "12px",
+            fontSize: "10px",
             backgroundColor: "#ED1C07",
             "&:hover": {
               color: "#171010",
